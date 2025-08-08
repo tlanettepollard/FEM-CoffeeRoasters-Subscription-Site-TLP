@@ -9,14 +9,38 @@ $lt-cyan: #66D2CF;
 $lt-grey: #E2DEDB;
 
 
+/*
+// Gradient Colors
+$lt-cream-gradient-1: rgba(254, 252, 247, 0);
+$lt-cream-gradient-2: rgba(254, 252, 247, 1);
+
+// Gradient Lists
+$list1: $lt-cream-gradient-1, $lt-cream-gradient-2;
+
+// Gradient Mixin
+@mixin gradient($direction, $list) {
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);
+}
+*/
+
+
 // Element Colors
 $page-background: $lt-cream;
 $footer-background: $dk-grey-blue;
 
 
-
 // Font Colors
 $body-font-color: $dk-grey-blue;
+$lt-heading-color: $lt-cream;
+/* hero, dark sections */
+$dk-heading-color: $dk-grey-blue;
+/* light sections, aside, how it works, map */
+
+$home-section1-heading: linear-gradient(180deg, rgba(254, 252, 247, 0.00) 0%, #FEFCF7 100%);
+
 $accordion-title: $grey;
 $accordion-title-disabled: $light-grey;
 
@@ -30,3 +54,4 @@ $selection-btn-hover: $pale-orange;
 $selection-btn-default: $cream;
 $accordion-caret-default: $dk-cyan;
 $accordion-caret-hover: $lt-cyan;
+$accordion-caret-disabled: $lt-cyan;
