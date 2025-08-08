@@ -52,7 +52,7 @@ export function Navbar() {
                 </nav>
             ) : (
                 <>
-                    <nav className="navbar__mobile">
+                    <nav className="nav__mobile">
                         <div className="logo__wrapper">
                             <Link>
                                 <img src={Logo} alt='welcome to coffee subscription' />
@@ -65,11 +65,14 @@ export function Navbar() {
                         )}
                     </nav>
                     {isNavExpanded ? (
-                        <nav className='navbar__mobile--menu'>
-                            <NavList />
-                            <button className='btn' onClick={changeRoute}>
-                                Create Your PLan
-                            </button>
+                        <nav>
+                            <div className='navbar__wrapper'>
+                                <NavList />
+
+                                <button className='btn' onClick={changeRoute}>
+                                    Create Your Plan
+                                </button>
+                            </div>
                         </nav>
                     ) : (
                         " "
