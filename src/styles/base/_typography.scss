@@ -30,9 +30,21 @@ p {
     /* 162.5% */
 }
 
+
+
 .header-one {
     color: $lt-heading-color;
     font-family: $header-font;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px;
+    /* 100% */
+}
+
+.number-header {
+    color: $number-heading-color;
+    font-family: "Fraunces 9pt";
     font-size: 72px;
     font-style: normal;
     font-weight: 900;
