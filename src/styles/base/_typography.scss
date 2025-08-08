@@ -13,4 +13,111 @@ h4 {
 p {
     font-family: $body-font;
     color: $body-font-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.nav-font {
+    color: $body-font-color;
+    font-family: $body-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+
+
+.header-one {
+    color: $lt-heading-color;
+    font-family: $header-font;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px;
+    /* 100% */
+}
+
+.number-header {
+    color: $number-heading-color;
+    font-family: $header-font;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px;
+    /* 100% */
+}
+
+.header-two-dk {
+    color: $dk-heading-color;
+    font-family: Fraunces;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+    /* 120% */
+}
+
+.header-two-lt {
+    color: $lt-heading-color;
+    font-family: Fraunces;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+    /* 120% */
+}
+
+.header-three-dk {
+    color: $dk-heading-color;
+    font-family: "Fraunces 9pt";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px;
+    /* 112.5% */
+}
+
+.header-three-lt {
+    color: $lt-heading-color;
+    font-family: "Fraunces 9pt";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px;
+    /* 112.5% */
+}
+
+.header-four-dk {
+    color: $dk-heading-color;
+    font-family: Fraunces;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+    /* 133.333% */
+}
+
+.header-four-lt {
+    color: $lt-heading-color;
+    font-family: Fraunces;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+    /* 133.333% */
+}
+
+.header-four-grey {
+    color: $grey;
+    font-family: Fraunces;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+    /* 133.333% */
 }
