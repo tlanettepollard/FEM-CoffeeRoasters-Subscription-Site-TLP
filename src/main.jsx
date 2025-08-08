@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router';
 import { router } from './router';
-import '../dist/css/main.css';
+import '/src/styles/main.scss';
 
 
 
