@@ -25,9 +25,11 @@ export const router = createBrowserRouter([
 function PageLayout() {
     return (
         <>
-            <Navbar />
-            <Outlet />
-            <Footer />
+            <div className='overflow-wrapper'>
+                <Navbar />
+                <Outlet />
+                <Footer />
+            </div>
         </>
     )
 }

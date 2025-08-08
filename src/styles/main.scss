@@ -1,1 +1,24 @@
+@use 'abstracts/colors';
+@use 'abstracts/media';
+@use 'abstracts/mixins';
+
+@use 'base/reset';
+@use 'base/typography';
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap");
+
+
+
+// Global Styles
+
+
+.overflow-wrapper {
+    overflow-x: hidden;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
