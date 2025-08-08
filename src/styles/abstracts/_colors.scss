@@ -38,20 +38,28 @@ $lt-heading-color: $lt-cream;
 /* hero, dark sections */
 $dk-heading-color: $dk-grey-blue;
 /* light sections, aside, how it works, map */
+$navbar-font-color: $grey;
+$mobile-navbar-font-color: $dk-grey-blue;
 
 $home-section1-heading: linear-gradient(180deg, rgba(254, 252, 247, 0.00) 0%, #FEFCF7 100%);
 
-$accordion-title: $grey;
+$accordion-title-default: $grey;
+$accordion-title-hover: $grey;
 $accordion-title-disabled: $light-grey;
 
+$selection-btn-font-active: $lt-cream;
 
-// Button Colors
+
+
+// Button Background Colors
 $main-btn-active: $dk-cyan;
 $main-btn-hover: $lt-cyan;
 $main-btn-disabled: $lt-grey;
+
 $selection-btn-active: $dk-cyan;
 $selection-btn-hover: $pale-orange;
 $selection-btn-default: $cream;
+
 $accordion-caret-default: $dk-cyan;
 $accordion-caret-hover: $lt-cyan;
 $accordion-caret-disabled: $lt-cyan;
