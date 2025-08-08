@@ -1,30 +1,29 @@
-@use 'abstracts/colors';
-@use 'abstracts/media';
-@use 'abstracts/mixins';
+@use 'abstracts/colors' as *;
+@use 'abstracts/media' as *;
+@use 'abstracts/mixins' as *;
 
-@use 'base/reset';
-@use 'base/typography';
+@use 'base/reset' as *;
+@use 'base/typography' as *;
 
-@use 'components/accordion';
-@use 'components/aside';
-@use 'components/buttons';
-@use 'components/cards';
-@use 'components/collection';
-@use 'components/commitment';
-@use 'components/map';
-@use 'components/modal';
-@use 'components/modalSubscribe';
-@use 'components/order';
-@use 'components/works';
+@use 'components/accordion' as *;
+@use 'components/buttons' as *;
+@use 'components/cards' as *;
+@use 'components/collection' as *;
+@use 'components/commitment' as *;
+@use 'components/map' as *;
+@use 'components/modal' as *;
+@use 'components/modalSubscribe' as *;
+@use 'components/order' as *;
+@use 'components/works' as *;
 
-@use 'layout/aside';
-@use 'layout/footer';
-@use 'layout/hero';
-@use 'layout/navbar';
+@use 'layout/aside' as *;
+@use 'layout/footer' as *;
+@use 'layout/hero' as *;
+@use 'layout/navbar' as *;
 
-@use 'pages/about';
-@use 'pages/home';
-@use 'pages/subscribe';
+@use 'pages/about' as *;
+@use 'pages/home' as *;
+@use 'pages/subscribe' as *;
 
 
 
@@ -33,7 +32,10 @@
 
 
 // Global Styles
-
+body {
+    cursor: default;
+    background: $page-background;
+}
 
 .overflow-wrapper {
     overflow-x: hidden;
