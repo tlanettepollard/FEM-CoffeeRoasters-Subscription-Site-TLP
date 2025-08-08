@@ -5,6 +5,27 @@
 @use 'base/reset';
 @use 'base/typography';
 
+@use 'components/accordion';
+@use 'components/aside';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/collection';
+@use 'components/commitment';
+@use 'components/map';
+@use 'components/modal';
+@use 'components/modalSubscribe';
+@use 'components/order';
+@use 'components/works';
+
+@use 'layout/aside';
+@use 'layout/footer';
+@use 'layout/hero';
+@use 'layout/navbar';
+
+@use 'pages/about';
+@use 'pages/home';
+@use 'pages/subscribe';
+
 
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap");
