@@ -1,29 +1,8 @@
-@use 'abstracts/colors' as *;
-@use 'abstracts/media' as *;
-@use 'abstracts/mixins' as *;
-
-@use 'base/reset' as *;
-@use 'base/typography' as *;
-
-@use 'components/accordion' as *;
-@use 'components/buttons' as *;
-@use 'components/cards' as *;
-@use 'components/collection' as *;
-@use 'components/commitment' as *;
-@use 'components/map' as *;
-@use 'components/modal' as *;
-@use 'components/modalSubscribe' as *;
-@use 'components/order' as *;
-@use 'components/works' as *;
-
-@use 'layout/aside' as *;
-@use 'layout/footer' as *;
-@use 'layout/hero' as *;
-@use 'layout/navbar' as *;
-
-@use 'pages/about' as *;
-@use 'pages/home' as *;
-@use 'pages/subscribe' as *;
+@use './abstracts/' as *;
+@use './base/' as *;
+@use './components/' as *;
+@use './layout/' as *;
+@use './pages/' as *;
 
 
 
@@ -32,9 +11,10 @@
 
 
 // Global Styles
+
 body {
-    cursor: default;
-    background: $page-background;
+    background-color: $page-background;
+    font-family: $body-font;
 }
 
 .overflow-wrapper {
