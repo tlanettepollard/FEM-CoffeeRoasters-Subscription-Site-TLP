@@ -1,5 +1,29 @@
 @use '../abstracts/' as *;
 @use '../base/' as *;
 
+.active {
+    color: $nav-font-color-active;
+}
 
+nav {
+    @include flex(row, space-between, center);
+    position: sticky;
+    top: 0;
+}
 
+nav ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: .0625rem;
+    gap: 2.0625rem;
+}
+
+nav ul li a {
+    display: block;
+
+}
+
+nav ul li a:not(.active):hover {
+    color: $nav-font-color-active;
+}
