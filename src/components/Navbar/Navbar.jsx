@@ -39,7 +39,7 @@ export function Navbar() {
                         </Link>
                     </div>
                     <div className='expanded-menu'>
-                        <NavList />
+                        <NavList className='' />
                     </div>
                 </nav>
             ) : (
@@ -58,7 +58,7 @@ export function Navbar() {
                     </nav>
                     {isNavExpanded ? (
                         <div className='mobile-menu'>
-                            <NavList />
+                            <NavList className='' />
                         </div>
                     ) : (
                         ""
