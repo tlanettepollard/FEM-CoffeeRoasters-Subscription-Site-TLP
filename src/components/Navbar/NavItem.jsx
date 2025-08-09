@@ -1,14 +1,15 @@
-import { Link } from "react-router";
+//import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 const NavItem = (props) => {
     return (
         <li className='nav__item'>
-            <Link to={props.link}
+            <NavLink to={props.link}
                 role='menuitem'
                 onClick={props.click}
                 className='anchor nav__item--btn nav-font'>
                 {props.name}
-            </Link>
+            </NavLink>
 
         </li>
     )
