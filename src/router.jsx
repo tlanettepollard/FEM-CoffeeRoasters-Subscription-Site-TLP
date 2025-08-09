@@ -2,9 +2,8 @@ import { createBrowserRouter } from "react-router";
 import { Outlet } from "react-router";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Footer } from "./components/Footer";
-import { Home } from "./pages/Home";
-import { About } from "./pages/About";
-import { Subscribe } from "./pages/Subscribe";
+import { Home, About, Subscribe } from "./pages";
+
 
 export const router = createBrowserRouter([
     {
