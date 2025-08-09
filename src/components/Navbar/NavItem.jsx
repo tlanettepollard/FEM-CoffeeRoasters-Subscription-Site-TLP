@@ -7,7 +7,7 @@ const NavItem = (props) => {
             <NavLink to={props.link}
                 role='menuitem'
                 onClick={props.click}
-                className='anchor nav__item--btn nav-font'>
+                className='anchor nav__item--btn'>
                 {props.name}
             </NavLink>
 
