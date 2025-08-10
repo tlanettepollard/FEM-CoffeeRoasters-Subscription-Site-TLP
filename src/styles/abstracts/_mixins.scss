@@ -1,5 +1,6 @@
 @use 'colors' as *;
 @use 'media' as *;
+@use '../base/typography' as *;
 
 
 // Flex Mixin
@@ -62,7 +63,91 @@
     }
 }
 
-//Fonts 
+//Font Mixins 
+
+@mixin HomeSubscribeHeroTitle() {
+    font-family: $header-font;
+    font-size: $home-subscribe-hero-heading-size;
+    color: $lt-cream;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+@mixin HeaderOne() {
+    font-family: $header-font;
+    font-size: $h1-heading-size;
+    color: $lt-heading-color;
+    font-size: $h1-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 4.5rem;
+}
+
+@mixin HeaderTwoDK() {
+    font-family: $header-font;
+    font-size: $h2-heading-size;
+    color: $dk-heading-color;
+    font-size: $h2-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 3rem;
+}
+
+@mixin HeaderTwoLT() {
+    font-family: $header-font;
+    font-size: $h2-heading-size;
+    color: $lt-heading-color;
+    font-size: $h2-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 3rem;
+}
+
+@mixin HeaderThreeDK() {
+    font-family: $header-font;
+    color: $dk-heading-color;
+    font-size: $h3-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2.25rem;
+}
+
+@mixin HeaderThreeLT() {
+    font-family: $header-font;
+    color: $lt-heading-color;
+    font-size: $h3-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2.25rem;
+}
+
+@mixin HeaderFourDK() {
+    color: $dk-heading-color;
+    font-family: $header-font;
+    font-size: $h4-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2rem;
+}
+
+@mixin HeaderFourLT() {
+    color: $lt-heading-color;
+    font-family: $header-font;
+    font-size: $h4-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2rem;
+}
+
+@mixin HeaderFourGrey() {
+    color: $grey;
+    font-family: $header-font;
+    font-size: $h4-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2rem;
+}
+
 @mixin NavbarFont() {
     color: $nav-font-color;
     font-family: 'Barlow', serif;
@@ -82,4 +167,27 @@
     font-weight: 900;
     line-height: 32px;
     /* 133.333% */
+}
+
+@mixin BodyFont() {
+    font-family: $body-font;
+    color: $body-font-color;
+    font-size: $body-font-size;
+    line-height: 1.625rem;
+    font-weight: 400;
+}
+
+@mixin ButtonFont() {
+    font-family: $header-font;
+    font-size: $button-font-size;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.5625rem;
+    color: $button-font-color;
+}
+
+@mixin AccordionMenuTitle() {
+    font-family: $header-font;
+    font-size: $accordion-menu-title-size;
+    color: $accordion-title-default;
 }

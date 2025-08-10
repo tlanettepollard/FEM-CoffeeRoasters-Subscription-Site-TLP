@@ -1,8 +1,15 @@
 import React from 'react';
+import SharedHero from '../components/Shared/SharedHero';
 
 
 export function Home() {
     return (
-        <h1>Home Page</h1>
+        <main className='main__home'>
+            <SharedHero
+                class='home'
+                title='Great coffee made simple'
+                desc='Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.'
+                button='Create your plan'/>
+        </main>
     )
 }
