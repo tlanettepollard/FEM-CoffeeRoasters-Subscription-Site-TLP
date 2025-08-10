@@ -10,7 +10,7 @@ export default function SharedHero(props) {
     }
 
     return (
-        <section className={`hero ${props.class}`}>
+        <section className={`hero container ${props.class}`}>
             <div className='hero__content'>
                 <h2 className='hero__title'>
                     {props.title}
