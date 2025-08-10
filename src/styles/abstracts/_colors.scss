@@ -9,23 +9,6 @@ $lt-cyan: #66D2CF;
 $lt-grey: #E2DEDB;
 
 
-/*
-// Gradient Colors
-$lt-cream-gradient-1: rgba(254, 252, 247, 0);
-$lt-cream-gradient-2: rgba(254, 252, 247, 1);
-
-// Gradient Lists
-$list1: $lt-cream-gradient-1, $lt-cream-gradient-2;
-
-// Gradient Mixin
-@mixin gradient($direction, $list) {
-    background: -webkit-linear-gradient($direction, $list);
-    background: -moz-linear-gradient($direction, $list);
-    background: -o-linear-gradient($direction, $list);
-    background: linear-gradient($direction, $list);
-}
-*/
-
 
 // Element Colors
 $page-background: $lt-cream;

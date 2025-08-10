@@ -1,5 +1,6 @@
 @use 'colors' as *;
 @use 'media' as *;
+@use '../base/typography' as *;
 
 
 // Flex Mixin
@@ -62,8 +63,65 @@
     }
 }
 
-//Fonts 
-@mixin NavbarFont() {
+//Font Mixins 
+
+@mixin HomeSubscribeHeroTitle() {
+    font-family: $header-font;
+    font-size: $home-subscribe-hero-heading-size;
+    color: $lt-cream;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+@mixin HeaderOne() {
+    font-family: $header-font;
+    font-size: $h1-heading-size;
+    color: $lt-heading-color;
+    font-size: $h1-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 4.5rem;
+}
+
+@mixin HeaderTwoDK() {
+    font-family: $header-font;
+    font-size: $h2-heading-size;
+    color: $dk-heading-color;
+    font-size: $h2-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 3rem;
+}
+
+@mixin HeaderTwoLT() {
+    font-family: $header-font;
+    font-size: $h2-heading-size;
+    color: $lt-heading-color;
+    font-size: $h2-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 3rem;
+}
+
+@mixin HeaderThreeDK() {
+    font-family: $header-font;
+    color: $dk-heading-color;
+    font-size: $h3-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2.25rem;
+}
+
+@mixin HeaderThreeLT() {
+    font-family: $header-font;
+    color: $lt-heading-color;
+    font-size: $h3-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2.25rem;
+}
+
+@mixin @mixin NavbarFont() {
     color: $nav-font-color;
     font-family: 'Barlow', serif;
     font-size: 16px;

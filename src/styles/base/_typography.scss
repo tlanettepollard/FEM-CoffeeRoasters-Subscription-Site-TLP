@@ -1,132 +1,20 @@
-@use '../abstracts/' as *;
-
-$body-font: "Barlow", serif;
+// Header Fonts
 $header-font: "Fraunces", serif;
+$home-subscribe-hero-heading-size: 2.5rem;
+$about-hero-heading-size: 1.75rem;
+$h1-heading-size: 4.5rem;
+$h2-heading-size: 2.5rem;
+$h3-heading-size: 2rem;
+$h4-heading-size: 1.5rem;
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: $header-font;
-}
 
-p {
-    font-family: $body-font;
-    color: $body-font-color;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    /* 162.5% */
-}
+// Body Fonts
+$body-font: "Barlow", serif;
+$body-font-size: 1rem;
+$button-font-size: 1.125rem;
+$navbar-font-size: .75rem;
+$accordion-menu-title-size: 3rem;
 
-.nav-font {
-    color: $nav-font-color;
-    font-family: $body-font;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    /* 162.5% */
-}
-
-.nav-font-mobile {
-    color: #333D4B;
-    text-align: center;
-    font-family: "Fraunces 9pt";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 32px;
-    /* 133.333% */
-}
-
-.header-one {
-    color: $lt-heading-color;
-    font-family: $header-font;
-    font-size: 72px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 72px;
-    /* 100% */
-}
-
-.number-header {
-    color: $number-heading-color;
-    font-family: $header-font;
-    font-size: 72px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 72px;
-    /* 100% */
-}
-
-.header-two-dk {
-    color: $dk-heading-color;
-    font-family: Fraunces;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 48px;
-    /* 120% */
-}
-
-.header-two-lt {
-    color: $lt-heading-color;
-    font-family: Fraunces;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 48px;
-    /* 120% */
-}
-
-.header-three-dk {
-    color: $dk-heading-color;
-    font-family: "Fraunces 9pt";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 36px;
-    /* 112.5% */
-}
-
-.header-three-lt {
-    color: $lt-heading-color;
-    font-family: "Fraunces 9pt";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 36px;
-    /* 112.5% */
-}
-
-.header-four-dk {
-    color: $dk-heading-color;
-    font-family: Fraunces;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 32px;
-    /* 133.333% */
-}
-
-.header-four-lt {
-    color: $lt-heading-color;
-    font-family: Fraunces;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 32px;
-    /* 133.333% */
-}
-
-.header-four-grey {
-    color: $grey;
-    font-family: Fraunces;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 32px;
-    /* 133.333% */
+a {
+    line-height: 2rem
 }
