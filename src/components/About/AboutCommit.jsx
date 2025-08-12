@@ -5,7 +5,7 @@ export function AboutCommitment() {
         <section className='commit container'>
             {Commitment.map(commitItem => {
                 return <div key={commitItem.id} className='commit__item'>
-                    <div className='commit__image__container'>
+                    <div className='commit__image__container container'>
                         <picture>
                             <source media='(min-width: 1200px)' srcSet={commitItem.imgUrl.desktop} width='445' height='520' />
                             <source media='(min-width: 768px)' srcSet={commitItem.imgUrl.tablet} width='286' height='400' />

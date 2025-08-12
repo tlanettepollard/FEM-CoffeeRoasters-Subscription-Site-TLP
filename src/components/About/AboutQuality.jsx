@@ -5,7 +5,7 @@ export function AboutQuality() {
         <section className='quality container'>
             {Quality.map(qualityItem => {
                 return <li key={qualityItem.id} className='quality__item'>
-                    <div className='quality__image__container'>
+                    <div className='quality__image__container container'>
                         <picture className='quality__picture'>
                             <source media='(min-width: 1200px)' srcSet={qualityItem.imgUrl.desktop} width='445' height='493' />
                             <source media='(min-width: 768px)' srcSet={qualityItem.imgUrl.tablet} width='565' height='320' />
