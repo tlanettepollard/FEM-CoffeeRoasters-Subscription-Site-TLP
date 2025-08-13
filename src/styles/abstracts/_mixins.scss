@@ -13,7 +13,7 @@
 
 // Media Mixins-- Min-Width
 
-// SM Mobile
+/* SM Mobile
 @mixin bp-sm-mobile {
     @media screen and (max-width: $sm-mobile) {
         @content;
@@ -61,7 +61,61 @@
     @media screen and (max-width: $md-tablet) {
         @content;
     }
+} */
+
+
+// Media-- Max-Width
+// Laptop 1400px
+@mixin bp-laptop {
+    @media screen and (max-width: $laptop) {
+        @content;
+    }
 }
+
+// XL Tablet 1200px
+@mixin bp-xl-tablet {
+    @media screen and (max-width: $xl-tablet) {
+        @content;
+    }
+}
+
+// LG Tablet 1024px
+@mixin bp-lg-tablet {
+    @media screen and (max-width: $lg-tablet) {
+        @content;
+    }
+}
+
+// MD Tablet 992px
+@mixin bp-md-tablet {
+    @media screen and (max-width: $md-tablet) {
+        @content;
+    }
+}
+
+
+// SM Tablet 767px
+@mixin bp-sm-tablet {
+    @media screen and (max-width: $sm-tablet) {
+        @content;
+    }
+}
+
+// LG Mobile 576px
+@mixin bp-lg-mobile {
+    @media screen and (max-width: $lg-mobile) {
+        @content;
+    }
+}
+
+// Mobile 375px
+@mixin bp-mobile {
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}
+
+
 
 //Font Mixins 
 
