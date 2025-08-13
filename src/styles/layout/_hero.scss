@@ -15,18 +15,36 @@
             height: 18.25rem;
         }
 
+        @include bp-sm-tablet {
+            width: 16.9375rem;
+            height: 18.8125rem;
+            text-align: center;
+            margin: auto;
+            align-items: center;
+        }
+
         .hero__title {
             @include HeaderOne;
 
             @include bp-lg-tablet {
                 font-size: 3rem;
             }
+
+            @include bp-sm-tablet {
+                font-size: 2.375rem;
+                line-height: 2.5rem;
+            }
            
         }
 
         .hero__text {
             @include BodyFont;
+
+            @include bp-sm-tablet {
+                font-size: .9375rem;
+            }
         }
+
     }
 
 }
