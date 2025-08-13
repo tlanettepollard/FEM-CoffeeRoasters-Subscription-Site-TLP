@@ -94,7 +94,7 @@
 }
 
 
-// SM Tablet 768px
+// SM Tablet 767px
 @mixin bp-sm-tablet {
     @media screen and (max-width: $sm-tablet) {
         @content;

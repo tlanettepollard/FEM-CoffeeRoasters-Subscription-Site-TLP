@@ -1,0 +1,25 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.hero {
+    @include flex(column, center, center);
+}
+
+
+// Home 
+.home {
+    background-image: url('/src/assets/home/desktop/image-hero-coffeepress.jpg');
+    height: 37.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include bp-lg-tablet {
+        background-image: url('/src/assets/home/tablet/image-hero-coffeepress.jpg');
+        height: 31.25rem;
+    }
+
+    @include bp-sm-tablet {
+        background-image: url('/src/assets/home/mobile/image-hero-coffeepress.jpg');
+    }
+}
