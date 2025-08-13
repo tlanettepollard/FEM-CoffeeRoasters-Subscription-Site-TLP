@@ -32,7 +32,7 @@ export function Navbar() {
     return (
         <>
             {isNotMobile ? (
-                <nav aria-label='site' className='expanded-nav'>
+                <nav aria-label='site' className='expanded-nav container'>
                     <div className='logo__wrapper'>
                         <Link to='/' className='logo--link'>
                             <img src={Logo} alt="welcome to coffeeroasters" />
@@ -44,7 +44,7 @@ export function Navbar() {
                 </nav>
             ) : (
                 <>
-                    <nav aria-label='site' className='mobile-nav'>
+                    <nav aria-label='site' className='mobile-nav container'>
                         <div className='logo__wrapper'>
                             <Link to='/' className='logo--link'>
                                 <img src={Logo} alt="welcome to coffeeroasters" />
