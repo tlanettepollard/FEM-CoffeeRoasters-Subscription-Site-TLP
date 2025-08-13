@@ -14,7 +14,7 @@ export function WorkList() {
             <div className='work__container'>
                 <WorksItems />
                 <div className='container'>
-                    <button onClick={changeRoute} className='btn primary__btn work__btn'>
+                    <button onClick={changeRoute} className='btn btn-works'>
                         Create your plan
                     </button>
                 </div>

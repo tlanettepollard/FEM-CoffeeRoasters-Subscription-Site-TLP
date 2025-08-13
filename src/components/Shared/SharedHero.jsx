@@ -18,7 +18,7 @@ export default function SharedHero(props) {
                 <p className='hero__text'>
                     {props.desc}
                 </p>
-                <button onClick={changeRoute} className='btn primary-btn hero-btn'>
+                <button onClick={changeRoute} className='btn btn-hero'>
                     {props.button}
                 </button>
             </div>

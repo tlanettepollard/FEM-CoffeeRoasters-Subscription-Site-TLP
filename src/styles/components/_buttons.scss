@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.btn {
+    display: inline;
+    width: 13.5625rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: .375rem;
+    background-color: $main-btn-active;
+    @include ButtonFont;
+
+    &:hover,
+    &:focus {
+        background-color: $main-btn-hover;
+        outline: none;
+        transition: 0.2s;
+    }
+
+    &:disabled {
+        background-color: $main-btn-disabled;
+        color: $button-font-color;
+    }
+}
