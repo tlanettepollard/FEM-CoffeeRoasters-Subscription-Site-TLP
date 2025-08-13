@@ -11,57 +11,6 @@
     align-items: $alignItems;
 }
 
-// Media Mixins-- Min-Width
-
-/* SM Mobile
-@mixin bp-sm-mobile {
-    @media screen and (max-width: $sm-mobile) {
-        @content;
-    }
-}
-
-// MD Tablet
-@mixin bp-md-tablet {
-    @media screen and (min-width: $md-tablet) {
-        @content;
-    }
-}
-
-// LG Tablet
-@mixin bp-lg-tablet {
-    @media screen and (min-width: $lg-tablet) {
-        @content;
-    }
-}
-
-// XL Desktop
-@mixin bp-xl-desktop {
-    @media screen and (min-width: $xl-desktop) {
-        @content;
-    }
-}
-
-// XXL Desktop
-@mixin bp-xxl-desktop {
-    @media screen and (min-width: $xxl-desktop) {
-        @content;
-    }
-}
-
-// Media Mixins-- Max-Width
-// XS Mobile
-@mixin bp-xs-mobile {
-    @media screen and (max-width: $xs-mobile) {
-        @content;
-    }
-}
-
-// MD Tablet
-@mixin bp-md-tablet-max {
-    @media screen and (max-width: $md-tablet) {
-        @content;
-    }
-} */
 
 
 // Media-- Max-Width
@@ -225,7 +174,7 @@
 
 @mixin BodyFont() {
     font-family: $body-font;
-    color: $body-font-color;
+    color: $button-font-color;
     font-size: $body-font-size;
     line-height: 1.625rem;
     font-weight: 400;

@@ -2,7 +2,33 @@
 @use '../base/' as *;
 
 .hero {
-    @include flex(column, center, center);
+    @include flex(row, flex-start, center);
+
+    &__content {
+        width: 30.8125rem;
+        height: 22.9375rem;
+        @include flex(column, space-evenly, flex-start);
+        margin-left: 3.625rem;
+
+        @include bp-lg-tablet {
+            width: 24.875rem;
+            height: 18.25rem;
+        }
+
+        .hero__title {
+            @include HeaderOne;
+
+            @include bp-lg-tablet {
+                font-size: 3rem;
+            }
+           
+        }
+
+        .hero__text {
+            @include BodyFont;
+        }
+    }
+
 }
 
 
@@ -22,4 +48,6 @@
     @include bp-sm-tablet {
         background-image: url('/src/assets/home/mobile/image-hero-coffeepress.jpg');
     }
+
+
 }
