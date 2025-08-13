@@ -131,7 +131,7 @@ const Accordion = () => {
     }
 
     return (
-        <div className="accordion__container">
+        <div className="accordion__container container">
             <ul className="accordion">
                 {PlanQuestions.map(plan => {
                     return <li className="accordion__list__item" key={plan.id}>
