@@ -111,6 +111,46 @@
 
 }
 
+// Subscribe
+.subscribe {
+    background-image: url(/src/assets/plan/desktop/image-hero-blackcup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 28.125rem;
+
+    @include bp-lg-tablet {
+        background-image: url('/src/assets/plan/tablet/image-hero-blackcup.jpg');
+        height: 25rem;
+    }
+
+    @include bp-sm-tablet {
+        background-image: url('/src/assets/plan/mobile/image-hero-blackcup.jpg');
+    }
+
+    .hero__content {
+        @include flex(column, center, flex-start);
+
+        @include bp-sm-tablet {
+            text-align: center;
+            margin: auto;
+            align-items: center;
+        }
+
+        .hero__title {
+            @include bp-lg-tablet {
+                font-size: 3rem;
+            }
+
+            @include bp-sm-tablet {
+                font-size: $h2-heading-size;
+            }
+        }
+    }
+}
+
+
+
+
 
 
 .about,
