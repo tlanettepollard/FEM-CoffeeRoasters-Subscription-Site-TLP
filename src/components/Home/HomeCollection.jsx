@@ -4,7 +4,7 @@ export function HomeCollection() {
     return (
         <section className='collection container'>
             <h2 className='collection__title'> Our collection</h2>
-            <div className="collection__list container">
+            <div className="collection__list">
                 {Collections.map(item => {
                     return <> <div className='collection__card' key={item.card}>
                         <img className='collection__img' src={item.imgUrl} width={item.width} height={item.height} alt={`enjoy our ${item.title}`} />

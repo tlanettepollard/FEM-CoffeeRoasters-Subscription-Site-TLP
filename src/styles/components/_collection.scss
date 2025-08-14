@@ -4,8 +4,9 @@
 .main__home {
     .collection {
         text-align: center;
-        @include flex(column, flex-start, center);
+        @include flex(column, center, center);
         margin: auto;
+
 
         &__title {
             font-size: 9.375rem;
@@ -18,6 +19,7 @@
             color: transparent;
             background: linear-gradient(hsl(43, 0%, 60%), hsl(43, 0%, 96%));
             background-clip: text;
+            padding-top: 10rem;
 
             @include bp-lg-tablet {
                 font-size: 6rem;
@@ -25,6 +27,7 @@
 
             @include bp-md-tablet {
                 font-size: 4.5rem;
+                padding-top: 6rem;
             }
 
             @include bp-sm-tablet {
@@ -36,14 +39,43 @@
             background: none;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
+            gap: 3rem;
             align-content: center;
+            margin-top: -5.3rem;
+
+            @include bp-md-tablet {
+                grid-template-columns: none;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                margin-top: -3rem;
+                justify-items: center;
+                text-align: left;
+                padding-bottom: 12rem;
+            }
+
+            @include bp-sm-tablet {
+                grid-template-rows: repeat(4, 1fr);    
+                grid-template-columns: none;
+                margin-top: 0;  
+            }
 
             .collection__card {
                 max-width: 14rem;
                 background: none;
                 z-index: 1;
                 padding-bottom: 12rem;
+
+                @include bp-md-tablet {
+                    max-width: 43rem;
+                    padding-bottom: 0;
+                    @include flex(row, space-between, flex-start);
+                }
+
+                @include bp-sm-tablet {
+                    padding-bottom: 0rem;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                }
 
                 .collection__img {
                     max-width: 10rem;
