@@ -18,6 +18,7 @@
             color: transparent;
             background: linear-gradient(hsl(43, 0%, 60%), hsl(43, 0%, 96%));
             background-clip: text;
+            padding-top: 10rem;
 
             @include bp-lg-tablet {
                 font-size: 6rem;
@@ -36,8 +37,9 @@
             background: none;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
+            gap: 3rem;
             align-content: center;
+            margin-top: -5.3rem;
 
             .collection__card {
                 max-width: 14rem;
