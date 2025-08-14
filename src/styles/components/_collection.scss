@@ -1,0 +1,55 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.main__home {
+    .collection {
+        text-align: center;
+        @include flex(column, flex-start, center);
+        margin: auto;
+
+        &__title {
+            font-size: 9.375rem;
+            font-family: $header-font;
+            text-transform: lowercase;
+            font-weight: 900;
+            font-style: normal;
+            text-decoration: none;
+            text-align: center;
+            color: transparent;
+            background: linear-gradient(hsl(43, 0%, 60%), hsl(43, 0%, 96%));
+            background-clip: text;
+
+            @include bp-lg-tablet {
+                font-size: 6rem;
+            }
+
+            @include bp-md-tablet {
+                font-size: 4.5rem;
+            }
+
+            @include bp-sm-tablet {
+                font-size: 2.5rem;
+            }
+        }
+
+        .collection__list {
+            background: none;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            align-content: center;
+
+            .collection__card {
+                max-width: 14rem;
+                background: none;
+                z-index: 1;
+                padding-bottom: 12rem;
+
+                .collection__img {
+                    max-width: 10rem;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
