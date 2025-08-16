@@ -65,18 +65,29 @@
 
                     @include bp-lg-tablet {
                         flex-direction: row;
+                        justify-content: space-between;
                     }
 
                     .card__img {
                         width: 4.5rem;
                         height: 4.5rem;
+
+                        @include bp-lg-tablet {
+                            width: 3.5rem;
+                            height: 3.5rem;
+                        }
                     }
 
                     .card__info {
-                        
+
                         .card__title {
                             @include HeaderFourLT;
                             padding-bottom: 1.5rem;
+
+                            @include bp-lg-tablet {
+                                line-height: 1.5rem;
+                            }
+
                         }
 
                         .card__text {
@@ -86,6 +97,7 @@
 
                             @include bp-lg-tablet {
                                 width: 21.5rem;
+                                font-size: .9375rem;
                             }
                         }
                     }
