@@ -48,7 +48,7 @@
             @include bp-lg-tablet {
                 grid-template-columns: none;
                 grid-template-rows: 1fr 1fr 1fr 1fr;
-                margin-top: -4.3rem;
+                margin-top: -4rem;
                 justify-items: center;
                 text-align: left;
                 padding-bottom: 12rem;
@@ -73,19 +73,21 @@
                     padding-bottom: 0rem;
                     background: none;
                     @include flex(row, space-between, center);
-                    
+                    gap: 2.5rem;
                 }
 
                 @include bp-md-tablet {
                     max-width: 28rem;
+                    gap: 0rem;
                 }
 
                 @include bp-sm-tablet {
-                    max-width: 16rem;
+                    max-width: 20rem;
                     padding-bottom: 0rem;
                     flex-direction: column;
                     text-align: center;
                     align-items: center;
+                    justify-content: space-between;
                 }
 
                 .collection__img {
@@ -106,14 +108,23 @@
                         width: 18rem;
                     }
 
+                    @include bp-sm-tablet {
+                        width: 18rem;
+                    }
+
+
                     .collection__subtitle {
                         @include HeaderFourDK;
                         margin-top: 3rem;
 
-
+                        @include bp-lg-tablet {
+                            margin-top: 2rem;
+                        }
                         @include bp-md-tablet {
                             margin-top: 1rem;
                         }
+
+                        
                     }
 
                     .collection__details {
@@ -126,6 +137,12 @@
 
                         @include bp-md-tablet {
                             margin-top: 1.5rem;
+                        }
+
+                        @include bp-sm-tablet {
+                            text-align: center;
+                            width: 18rem;
+                            font-size: .9375rem;
                         }
                     }
                 }
