@@ -172,7 +172,15 @@
     /* 133.333% */
 }
 
-@mixin BodyFont() {
+@mixin BodyFontDK() {
+    font-family: $body-font;
+    color: $body-font-color;
+    font-size: $body-font-size;
+    line-height: 1.625rem;
+    font-weight: 400;
+}
+
+@mixin BodyFontLT() {
     font-family: $body-font;
     color: $button-font-color;
     font-size: $body-font-size;
