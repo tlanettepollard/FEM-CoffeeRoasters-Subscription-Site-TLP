@@ -45,18 +45,20 @@
             align-content: center;
             margin-top: -5.3rem;
 
-            @include bp-md-tablet {
+            @include bp-lg-tablet {
                 grid-template-columns: none;
                 grid-template-rows: 1fr 1fr 1fr 1fr;
-                margin-top: -2.3rem;
+                margin-top: -4.3rem;
                 justify-items: center;
                 text-align: left;
                 padding-bottom: 12rem;
             }
 
+            @include bp-md-tablet {
+                margin-top: -3rem;
+            }
+
             @include bp-sm-tablet {
-                grid-template-rows: repeat(4, 1fr);
-                grid-template-columns: none;
                 margin-top: 0;
             }
 
@@ -66,11 +68,16 @@
                 z-index: 1;
                 padding-bottom: 12rem;
 
-                @include bp-md-tablet {
-                    max-width: 43rem;
+                @include bp-lg-tablet {
+                    max-width: 40rem;
                     padding-bottom: 0rem;
                     background: none;
-                    @include flex(row, space-between, flex-start);
+                    @include flex(row, space-between, center);
+                    
+                }
+
+                @include bp-md-tablet {
+                    max-width: 28rem;
                 }
 
                 @include bp-sm-tablet {
@@ -86,7 +93,7 @@
                     max-width: 10rem;
                     margin: auto;
 
-                    @include bp-md-tablet {
+                    @include bp-lg-tablet {
                         background: none;
                         max-width: 15.9rem;
                     }
@@ -95,13 +102,14 @@
                 .collection__content {
                     width: 15.625rem;
 
-                    @include bp-md-tablet {
+                    @include bp-lg-tablet {
                         width: 18rem;
                     }
 
                     .collection__subtitle {
                         @include HeaderFourDK;
                         margin-top: 3rem;
+
 
                         @include bp-md-tablet {
                             margin-top: 1rem;
@@ -112,6 +120,9 @@
                         @include BodyFontDK;
                         margin-top: 1.5rem;
 
+                        @include bp-lg-tablet {
+                            width: 15.9375rem;
+                        }
 
                         @include bp-md-tablet {
                             margin-top: 1.5rem;
