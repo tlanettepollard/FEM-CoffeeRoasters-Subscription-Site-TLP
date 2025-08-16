@@ -13,7 +13,7 @@ export function HomeCollection() {
                             <h3 className="collection__subtitle">
                                 {item.title}
                             </h3>
-                            <p className="collections__details">
+                            <p className="collection__details">
                                 {item.summary}
                             </p>
                         </div>

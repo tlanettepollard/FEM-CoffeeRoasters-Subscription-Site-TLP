@@ -38,7 +38,7 @@
         }
 
         .hero__text {
-            @include BodyFont;
+            @include BodyFontLT;
 
             @include bp-sm-tablet {
                 font-size: .9375rem;

@@ -19,14 +19,16 @@
             color: transparent;
             background: linear-gradient(hsl(43, 0%, 60%), hsl(43, 0%, 96%));
             background-clip: text;
-            padding-top: 10rem;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-top: 8rem;
 
             @include bp-lg-tablet {
                 font-size: 6rem;
             }
 
             @include bp-md-tablet {
-                font-size: 4.5rem;
+                font-size: 5rem;
                 padding-top: 6rem;
             }
 
@@ -46,31 +48,33 @@
             @include bp-md-tablet {
                 grid-template-columns: none;
                 grid-template-rows: 1fr 1fr 1fr 1fr;
-                margin-top: -3rem;
+                margin-top: -2.3rem;
                 justify-items: center;
                 text-align: left;
                 padding-bottom: 12rem;
             }
 
             @include bp-sm-tablet {
-                grid-template-rows: repeat(4, 1fr);    
+                grid-template-rows: repeat(4, 1fr);
                 grid-template-columns: none;
-                margin-top: 0;  
+                margin-top: 0;
             }
 
             .collection__card {
-                max-width: 14rem;
+                max-width: 16rem;
                 background: none;
                 z-index: 1;
                 padding-bottom: 12rem;
 
                 @include bp-md-tablet {
                     max-width: 43rem;
-                    padding-bottom: 0;
+                    padding-bottom: 0rem;
+                    background: none;
                     @include flex(row, space-between, flex-start);
                 }
 
                 @include bp-sm-tablet {
+                    max-width: 16rem;
                     padding-bottom: 0rem;
                     flex-direction: column;
                     text-align: center;
@@ -78,8 +82,41 @@
                 }
 
                 .collection__img {
+                    background: none;
                     max-width: 10rem;
                     margin: auto;
+
+                    @include bp-md-tablet {
+                        background: none;
+                        max-width: 15.9rem;
+                    }
+                }
+
+                .collection__content {
+                    width: 15.625rem;
+
+                    @include bp-md-tablet {
+                        width: 18rem;
+                    }
+
+                    .collection__subtitle {
+                        @include HeaderFourDK;
+                        margin-top: 3rem;
+
+                        @include bp-md-tablet {
+                            margin-top: 1rem;
+                        }
+                    }
+
+                    .collection__details {
+                        @include BodyFontDK;
+                        margin-top: 1.5rem;
+
+
+                        @include bp-md-tablet {
+                            margin-top: 1.5rem;
+                        }
+                    }
                 }
             }
         }
