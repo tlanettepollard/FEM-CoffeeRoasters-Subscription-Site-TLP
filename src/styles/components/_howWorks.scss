@@ -1,0 +1,14 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.main__home {
+    .work {
+        padding-top: 10rem;
+        max-width: 75rem;
+
+        
+        &__title {
+            @include HeaderFourLTG;
+        }
+    }
+}

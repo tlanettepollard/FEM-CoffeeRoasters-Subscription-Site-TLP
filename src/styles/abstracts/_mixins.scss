@@ -133,8 +133,17 @@
     line-height: 2rem;
 }
 
-@mixin HeaderFourLT() {
+@mixin HeaderFourLTW() {
     color: $lt-heading-color;
+    font-family: $header-font;
+    font-size: $h4-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2rem;
+}
+
+@mixin HeaderFourLTG() {
+    color: $grey;
     font-family: $header-font;
     font-size: $h4-heading-size;
     font-style: normal;
