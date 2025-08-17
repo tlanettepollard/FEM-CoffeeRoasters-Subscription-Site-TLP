@@ -12,8 +12,10 @@ export function WorkList() {
     return (
         <section className='work container'>
             <h2 className='work__title'>How it works</h2>
-            <div className='work__container'>
+            <div>
                 <img className='divider' src={dividerImg} alt="decorative divider" />
+            </div>
+            <div className='work__container'>
                 <WorksItems />
                 <div className='btn__container'>
                     <button onClick={changeRoute} className='btn btn-works'>
