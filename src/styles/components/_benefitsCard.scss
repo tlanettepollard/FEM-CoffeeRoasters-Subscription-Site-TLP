@@ -117,7 +117,7 @@
                     .card__info {
 
                         .card__title {
-                            @include HeaderFourLT;
+                            @include HeaderFourLTW;
                             padding-bottom: 1.5rem;
 
                             @include bp-lg-tablet {
