@@ -5,10 +5,30 @@
     .work {
         padding-top: 10rem;
         max-width: 75rem;
+        height: 43.75rem;
+        @include flex (column, space-between, flex-start);
 
-        
+
         &__title {
             @include HeaderFourLTG;
+        }
+
+        .divider {
+            width: 51.0625rem;
+            height: auto;
+            
+            @include bp-lg-tablet {
+                width: 43.75rem;
+                height: auto;
+            }
+            @include bp-md-tablet {
+                width: 100%;
+                height: auto;
+            }
+
+            @include bp-sm-tablet {
+                display: none;
+            }
         }
     }
 }
