@@ -3,35 +3,18 @@
 
 .main__home {
     .work {
-        padding-top: 10rem;
+        padding-top: 6.25rem;
         max-width: 75rem;
-        height: 43.75rem;
-        @include flex (column, space-between, flex-start);
-
-        @include bp-sm-tablet {
-            height: 69.8125rem;
-        }
+        height: 49.0625rem;
+        @include flex(column, center, flex-start);
         &__title {
             @include HeaderFourLTG;
+            padding-bottom: 1.25rem;
         }
-
         .divider {
             width: 51.0625rem;
             height: auto;
-
-            @include bp-lg-tablet {
-                width: 43.75rem;
-                height: auto;
-            }
-
-            @include bp-md-tablet {
-                width: 100%;
-                height: auto;
-            }
-
-            @include bp-sm-tablet {
-                display: none;
-            }
+            padding-bottom: 2.5rem;
         }
 
         .work__container {
@@ -39,6 +22,8 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: 1fr;
+                gap: 5.9375rem;
+                padding-bottom: 2.5rem;
 
                 @include bp-sm-tablet {
                     grid-template-columns: none;
@@ -48,21 +33,27 @@
                 .work__item {
                     width: 100%;
                     height: 22.1875rem;
-                    @include flex(column, space-evenly, flex-start);
+                    @include flex(column, space-between, flex-start);
                     text-align: start;
+                   
 
-                    @include bp-lg-tablet {
-                        height: 23.5rem;
+                    &--number {
+                        @include HeaderOneNumber;
+                        //padding-bottom: 2.375rem;
                     }
 
-                    @include bp-sm-tablet {
-                        justify-content: center;
-                        align-items: center;
-                        height: 15.625rem;
-                        text-align: center;
+                    &--title {
+                        @include HeaderThreeDK;
+                        width: 15.9375rem;
+                        height: 4.5625rem;
+                    }
+
+                    &--summary {
+                        @include BodyFontDK;
+                        width: 17.8125rem;
+                        height: 8.125rem;
                     }
                 }
-
             }
         }
     }
