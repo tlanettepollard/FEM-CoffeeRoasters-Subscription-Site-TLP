@@ -17,11 +17,11 @@ export function WorkList() {
             </div>
             <div className='work__container'>
                 <WorksItems />
-                <div className='btn__container'>
-                    <button onClick={changeRoute} className='btn btn-works'>
-                        Create your plan
-                    </button>
-                </div>
+            </div>
+            <div className='btn__container'>
+                <button onClick={changeRoute} className='btn btn-works'>
+                    Create your plan
+                </button>
             </div>
         </section>
     )
