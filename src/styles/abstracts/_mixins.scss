@@ -86,6 +86,16 @@
     line-height: 4.5rem;
 }
 
+@mixin HeaderOneNumber() {
+    font-family: $header-font;
+    font-size: $h1-heading-size;
+    color: $number-heading-color;
+    font-size: $h1-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 4.5rem;
+}
+
 @mixin HeaderTwoDK() {
     font-family: $header-font;
     font-size: $h2-heading-size;
