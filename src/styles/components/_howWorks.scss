@@ -14,8 +14,40 @@
        .divider {
         width: 47.5rem; 
         height: auto;
+
+        @include bp-sm-tablet {
+            display: none;
+        }
        }
 
-       
+       .work__container {
+            .works__items {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+                width: 100%;
+
+                @include bp-sm-tablet {
+                    grid-template-columns: none;
+                    grid-template-rows: repeat(3, 1fr);
+                }
+
+                .work__item {
+                    max-width: 23.4375rem;
+                    height: auto;
+                    @include flex(column, space-between,flex-start);
+                    text-align: start;
+
+                    @include bp-sm-tablet {
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    &--number {
+                        @include HeaderOneNumber;
+                    }
+                }
+            }
+       }
     }
 }
