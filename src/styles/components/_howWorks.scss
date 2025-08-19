@@ -1,4 +1,21 @@
 @use '../abstracts/' as *;
 @use '../base/' as *;
 
-.main__home {}
+.main__home {
+    .work {
+       padding-top: 10rem;
+       max-width: 65rem;
+
+       &__title {
+        @include HeaderFourGrey;
+        padding-bottom: 5rem;
+       } 
+
+       .divider {
+        width: 47.5rem; 
+        height: auto;
+       }
+
+       
+    }
+}
