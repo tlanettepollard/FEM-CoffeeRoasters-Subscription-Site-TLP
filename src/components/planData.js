@@ -110,7 +110,7 @@ export const Works = [
     {
         id: '10',
         number: '03',
-        title: 'Recieve and enjoy',
+        title: 'Receive and enjoy',
         summary: 'We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience',
     },
 ];
