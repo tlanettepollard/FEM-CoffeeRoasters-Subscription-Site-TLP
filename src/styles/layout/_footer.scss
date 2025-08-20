@@ -1,0 +1,70 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+footer {
+    max-height: 25rem;
+    margin: 1.25rem 0;
+
+    @include bp-lg-tablet {
+        height: 16.875rem;
+    }
+
+    @include bp-sm-tablet {
+        height: 21.875rem;
+    }
+    .footer__container {
+        background-color: $dk-grey-blue;
+        @include flex(row, space-between, center);
+        padding-inline: 5.3125rem;
+
+        @include bp-lg-tablet {
+            flex-direction: column;
+        }
+
+        .footer__mainmenu {
+            width: 50%;
+            @include flex(row, space-between, center);
+
+            @include bp-lg-tablet {
+                width: 100%;
+                flex-direction: column;
+                margin-top: 3.375rem;
+            }
+
+            @include bp-sm-tablet {
+               
+            }
+
+            .footer__logo {
+                width: 14.75rem;
+                height: 1.625rem;
+                height: auto;
+            }
+            .footer__menu {
+                width: 18.75rem;
+                @include flex(row, space-between, center);
+                li a {
+                    color: $lt-cream;
+                }
+
+                @include bp-sm-tablet {
+                    flex-direction: column;
+                    margin-top: 3rem;
+                }
+            }
+        }
+
+        .footer__socialmenu {
+            width: 7.5rem;
+            @include flex(row, space-between, center);
+
+            @include bp-lg-tablet {
+                margin-bottom: 3.375rem;
+            }
+
+            @include bp-sm-tablet {
+                margin-top: 3rem;
+            }
+        }
+    }
+}

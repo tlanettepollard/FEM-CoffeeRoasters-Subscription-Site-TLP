@@ -8,6 +8,7 @@
     border: none;
     border-radius: .375rem;
     background-color: $main-btn-active;
+    cursor: pointer;
     @include ButtonFont;
 
     &:hover,

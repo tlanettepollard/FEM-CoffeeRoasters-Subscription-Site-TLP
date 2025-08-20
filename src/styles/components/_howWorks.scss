@@ -3,40 +3,61 @@
 
 .main__home {
     .work {
-       padding-top: 10rem;
-       max-width: 65rem;
+        padding-top: 10rem;
+        max-width: 65rem;
 
-       &__title {
-        @include HeaderFourGrey;
-        padding-bottom: 5rem;
-       } 
-
-       .divider {
-        width: 47.5rem; 
-        height: auto;
-
-        @include bp-sm-tablet {
-            display: none;
+        &__title {
+            @include HeaderFourGrey;
+            padding-bottom: 5rem;
         }
-       }
 
-       .work__container {
+        .divider {
+            width: 47.5rem;
+            height: auto;
+
+            @include bp-sm-tablet {
+                display: none;
+            }
+        }
+
+        .work__container {
+            @include flex(column, space-between, flex-start);
+            width: 100%;
+            height: auto;
+
+            @include bp-sm-tablet {
+                align-items: center;
+            }
+
             .works__items {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: 1fr;
                 width: 100%;
+                gap: 5.625rem;
+
+                @include bp-lg-tablet {
+                    gap: .625rem;
+                }
 
                 @include bp-sm-tablet {
                     grid-template-columns: none;
                     grid-template-rows: repeat(3, 1fr);
+                    gap: 3.5rem;
                 }
 
                 .work__item {
                     max-width: 23.4375rem;
                     height: auto;
-                    @include flex(column, space-between,flex-start);
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(3, 1fr);
+                    align-content: top;
                     text-align: start;
+
+                    @include bp-lg-tablet {
+                        grid-template-rows: repeat(3, 3.125rem, auto, 6.25rem);
+                    }
 
                     @include bp-sm-tablet {
                         align-items: center;
@@ -45,9 +66,51 @@
 
                     &--number {
                         @include HeaderOneNumber;
+                        //margin-bottom: -2.5rem;
                     }
+
+                    &--title {
+                        @include HeaderThreeDK;
+                        padding-right: 1.875rem;
+
+                        @include bp-lg-tablet {
+                            font-size: 1.75rem;
+                            //margin-top: -0.625rem;
+                        }
+
+                        @include bp-sm-tablet {
+                            text-align: center;
+                            padding-right: 0;
+                        }
+                    }
+
+
+
+                    &--summary {
+                        @include BodyFontDK;
+                        //margin-top: -1.25rem;
+
+                        @include bp-lg-tablet {
+                            //margin-top: -1.875rem;
+                        }
+
+                        @include bp-sm-tablet {
+                            font-size: .9375rem;
+                            line-height: 1.5625rem;
+                            //margin-top: 0;
+                        }
+                    }
+
                 }
             }
-       }
+
+            
+        }
+
+        .btn__container {
+            @include bp-sm-tablet {
+                text-align: center;
+            }
+        }
     }
 }
