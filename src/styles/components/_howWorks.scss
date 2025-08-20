@@ -4,7 +4,9 @@
 .main__home {
     .work {
         padding-top: 10rem;
+        padding-bottom: 12.5rem;
         max-width: 65rem;
+
 
         &__title {
             @include HeaderFourGrey;
