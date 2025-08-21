@@ -10,7 +10,7 @@ export function WorkList() {
     }
 
     return (
-        <section className='work container'>
+        <section className='work'>
             <h2 className='work__title'>How it works</h2>
             <div>
                 <img className='divider' src={dividerImg} alt="decorative divider" />
