@@ -20,8 +20,14 @@
         }
 
         .divider {
-            width: 47.5rem;
+            width: 49.375rem;
             height: auto;
+            padding-bottom: 5rem;
+
+            @include bp-md-tablet {
+                width: 30.625rem;
+                height: auto;
+            }
 
             @include bp-sm-tablet {
                 display: none;
@@ -60,7 +66,6 @@
                     display: grid;
                     grid-template-columns: 1fr;
                     grid-template-rows: repeat(3, 1fr);
-                    align-content: top;
                     text-align: start;
 
                     @include bp-lg-tablet {
@@ -75,7 +80,6 @@
                     &--number {
                         @include HeaderOneNumber;
                         align-content: center;
-                        //margin-bottom: -2.5rem;
                     }
 
                     &--title {
@@ -85,6 +89,7 @@
 
                         @include bp-lg-tablet {
                             font-size: 1.75rem;
+                            align-content:first baseline;
                             //margin-top: -0.625rem;
                         }
 
@@ -98,16 +103,16 @@
 
                     &--summary {
                         @include BodyFontDK;
-                        //margin-top: -1.25rem;
+                        margin-top: -0.625rem;
 
                         @include bp-lg-tablet {
-                            //margin-top: -1.875rem;
+                            margin-top: -1.875rem;
                         }
 
                         @include bp-sm-tablet {
                             font-size: .9375rem;
                             line-height: 1.5625rem;
-                            //margin-top: 0;
+                            margin-top: 0;
                         }
                     }
 
