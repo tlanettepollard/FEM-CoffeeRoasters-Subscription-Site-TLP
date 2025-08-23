@@ -1,0 +1,42 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.commit {
+    padding-top: 10.5rem !important;
+    margin: 0 5rem;
+
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 2rem;
+
+        @include bp-sm-tablet {
+            grid-template-columns: none;
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .commit__img {
+            background-image: url('/src/assets/about/desktop/image-commitment.jpg');
+            background-size: cover;
+            width: 27.8125rem;
+            height: 32.5rem;
+        }
+
+        .commit__details {
+            max-width: 33.7rem;
+            align-items: center;
+
+            &__title {
+                @include HeaderThreeDK;
+            }
+
+            &__summary {
+                @include BodyFontDK;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+}
