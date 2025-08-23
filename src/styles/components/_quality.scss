@@ -1,0 +1,83 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.quality {
+    max-width: 80rem;
+    position: relative;
+    margin-top: 20rem !important;
+
+    @include bp-sm-tablet {
+        max-width: 40rem;
+
+    }
+
+    &__content {
+        height: 29.625rem;
+        background-color: $dk-grey-blue;
+        border-radius: .375rem;
+        @include flex(row, space-between, center);
+        padding: 0 5rem;
+        gap: 2rem;
+
+        @include bp-lg-tablet {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include bp-sm-tablet {
+            height: 31.8125rem;
+        }
+
+        .quality__details {
+            width: 33.75rem;
+            height: auto;
+
+            @include bp-lg-tablet {
+                width: 17.4375rem;
+                text-align: center;
+
+            }
+
+            &__title {
+                @include HeaderThreeLT;
+                padding-bottom: 2rem;
+
+                @include bp-lg-tablet {
+                    margin-top: 2rem;
+                }
+            }
+
+            &__summary {
+                @include BodyFontLT;
+
+                @include bp-lg-tablet {
+                    font-size: .9375rem;
+                }
+
+                @include bp-sm-tablet {
+                    width: 17.4375rem;
+                }
+            }
+        }
+
+        .quality__img {
+            margin-top: -10rem;
+
+            @include bp-lg-tablet {
+                margin-top: -15rem;
+            }
+
+            @include bp-sm-tablet {
+                width: 100%;
+                height: auto;
+                margin-top: -5rem;
+
+            }
+
+        }
+
+    }
+
+
+}

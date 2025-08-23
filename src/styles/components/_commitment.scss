@@ -2,8 +2,9 @@
 @use '../base/' as *;
 
 .commit {
+    max-width: 90rem;
     padding-top: 10.5rem !important;
-    margin: 0 5rem;
+   
 
     @include bp-md-tablet {
         padding-top: 9.5rem !important;
@@ -23,6 +24,7 @@
         align-items: center;
         justify-items: center;
         gap: 2rem;
+        margin: auto;
 
         @include bp-sm-tablet {
             grid-template-columns: none;
@@ -57,8 +59,9 @@
         }
 
         .commit__details {
-            max-width: 33.7rem;
+            max-width: 33.75rem;
             align-items: center;
+            
 
             @include bp-md-tablet {
                 align-items: start;
