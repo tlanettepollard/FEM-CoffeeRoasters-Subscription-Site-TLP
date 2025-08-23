@@ -1,0 +1,88 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.commit {
+    padding-top: 10.5rem !important;
+    margin: 0 5rem;
+
+    @include bp-md-tablet {
+        padding-top: 9.5rem !important;
+    }
+
+    @include bp-sm-tablet {
+        padding-top: 6.25rem !important;
+    }
+
+    @include bp-mobile {
+        padding-top: 3.125rem !important;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 2rem;
+
+        @include bp-sm-tablet {
+            grid-template-columns: none;
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        @include bp-mobile {
+            gap: 0;
+        }
+
+        .commit__img {
+            background-image: url('/src/assets/about/desktop/image-commitment.jpg');
+            background-size: cover;
+            width: 27.8125rem;
+            height: 32.5rem;
+
+            @include bp-md-tablet {
+                background-image: url('/src/assets/about/tablet/image-commitment.jpg');
+              width: 17.5625rem;
+              height: 29.375rem;  
+            }
+
+            @include bp-sm-tablet {
+                background-image: url('/src/assets/about/mobile/image-commitment.jpg');
+                width: 100%;
+                height: 29.375rem;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            
+        }
+
+        .commit__details {
+            max-width: 33.7rem;
+            align-items: center;
+
+            @include bp-md-tablet {
+                align-items: start;
+            }
+
+            &__title {
+                @include HeaderThreeDK;
+
+                @include bp-sm-tablet {
+                    font-size: 1.75rem;
+                    text-align: center;
+                }
+            }
+
+            &__summary {
+                @include BodyFontDK;
+                margin-top: 2rem;
+
+                @include bp-sm-tablet {
+                    text-align: center;
+                    font-size: .9375rem;
+                }
+            }
+        }
+    }
+
+}
