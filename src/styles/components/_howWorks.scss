@@ -13,6 +13,9 @@
             margin: 0;
         }
 
+        @include bp-sm-tablet {
+            padding-bottom: 7.5rem;
+        }
 
         &__title {
             @include HeaderFourGrey;
@@ -128,8 +131,17 @@
         }
 
         .btn__container {
+            width: 100%;
+            padding-top: 4rem;
+            @include flex(column, center, flex-start);
+
+            @include bp-md-tablet {
+                padding-top: 2.75rem;
+                
+            }
             @include bp-sm-tablet {
-                text-align: center;
+                align-items: center;
+                padding-top: 4.9375rem;
             }
         }
     }
