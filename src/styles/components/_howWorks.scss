@@ -24,9 +24,14 @@
             height: auto;
             padding-bottom: 5rem;
 
+            @include bp-lg-tablet {
+                width: 36.25rem;
+            }
+
             @include bp-md-tablet {
-                width: 30.625rem;
+                width: 31.25rem;
                 height: auto;
+                padding-bottom: 3rem;
             }
 
             @include bp-sm-tablet {
@@ -89,7 +94,7 @@
 
                         @include bp-lg-tablet {
                             font-size: 1.75rem;
-                            align-content:first baseline;
+                            align-content: first baseline;
                             //margin-top: -0.625rem;
                         }
 
