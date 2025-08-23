@@ -13,6 +13,9 @@
             margin: 0;
         }
 
+        @include bp-sm-tablet {
+            padding-bottom: 7.5rem;
+        }
 
         &__title {
             @include HeaderFourGrey;
@@ -20,8 +23,19 @@
         }
 
         .divider {
-            width: 47.5rem;
+            width: 49.375rem;
             height: auto;
+            padding-bottom: 5rem;
+
+            @include bp-lg-tablet {
+                width: 36.25rem;
+            }
+
+            @include bp-md-tablet {
+                width: 31.25rem;
+                height: auto;
+                padding-bottom: 3rem;
+            }
 
             @include bp-sm-tablet {
                 display: none;
@@ -60,7 +74,6 @@
                     display: grid;
                     grid-template-columns: 1fr;
                     grid-template-rows: repeat(3, 1fr);
-                    align-content: top;
                     text-align: start;
 
                     @include bp-lg-tablet {
@@ -75,7 +88,6 @@
                     &--number {
                         @include HeaderOneNumber;
                         align-content: center;
-                        //margin-bottom: -2.5rem;
                     }
 
                     &--title {
@@ -85,6 +97,7 @@
 
                         @include bp-lg-tablet {
                             font-size: 1.75rem;
+                            align-content: first baseline;
                             //margin-top: -0.625rem;
                         }
 
@@ -98,16 +111,16 @@
 
                     &--summary {
                         @include BodyFontDK;
-                        //margin-top: -1.25rem;
+                        margin-top: -0.625rem;
 
                         @include bp-lg-tablet {
-                            //margin-top: -1.875rem;
+                            margin-top: -1.875rem;
                         }
 
                         @include bp-sm-tablet {
                             font-size: .9375rem;
                             line-height: 1.5625rem;
-                            //margin-top: 0;
+                            margin-top: 0;
                         }
                     }
 
@@ -118,8 +131,17 @@
         }
 
         .btn__container {
+            width: 100%;
+            padding-top: 4rem;
+            @include flex(column, center, flex-start);
+
+            @include bp-md-tablet {
+                padding-top: 2.75rem;
+                
+            }
             @include bp-sm-tablet {
-                text-align: center;
+                align-items: center;
+                padding-top: 4.9375rem;
             }
         }
     }
