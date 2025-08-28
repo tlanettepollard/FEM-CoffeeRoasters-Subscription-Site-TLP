@@ -8,10 +8,11 @@
 
     @include bp-sm-tablet {
         max-width: 40rem;
-
+        margin-top: 10rem !important;
     }
 
     &__content {
+        width: 100%;
         height: 29.625rem;
         background-color: $dk-grey-blue;
         border-radius: .375rem;
@@ -27,6 +28,7 @@
 
         @include bp-sm-tablet {
             height: 31.8125rem;
+            padding: 0rem 1.5rem;
         }
 
         .quality__details {
@@ -34,9 +36,11 @@
             height: auto;
 
             @include bp-lg-tablet {
-                width: 17.4375rem;
                 text-align: center;
+            }
 
+            @include bp-sm-tablet {
+                width: 17.4375rem;
             }
 
             &__title {
@@ -45,6 +49,10 @@
 
                 @include bp-lg-tablet {
                     margin-top: 2rem;
+                }
+
+                @include bp-sm-tablet {
+                    font-size: 1.75rem;
                 }
             }
 
@@ -61,20 +69,37 @@
             }
         }
 
-        .quality__img {
-            margin-top: -10rem;
+        .quality__img--container {
+            position: relative;
+            .quality__img {
+                margin-top: -10rem;
+                background-image: url('/src/assets/about/desktop/image-quality.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 27.8125rem;
+                height: 29.625rem;
 
-            @include bp-lg-tablet {
-                margin-top: -15rem;
+                @include bp-lg-tablet {
+                    margin-top: -15rem;
+                    background-image: url('/src/assets/about/tablet/image-quality.jpg');
+                    width: 35.8125rem;
+                    height: 20rem;
+                }
+
+                @include bp-sm-tablet {
+                    background-image: url('/src/assets/about/mobile/image-quality.jpg');
+                    width: 17.4375rem;
+                    height: 9.75rem;
+                    margin-top: -5rem;
+                }
+
+                @include bp-mobile {
+                    width: 12.5rem;
+                    height:  9.375rem;
+                }
+
             }
-
-            @include bp-sm-tablet {
-                width: 100%;
-                height: auto;
-                margin-top: -5rem;
-
-            }
-
         }
 
     }
