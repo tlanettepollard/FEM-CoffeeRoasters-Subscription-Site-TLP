@@ -34,7 +34,7 @@
             height: auto;
 
             @include bp-lg-tablet {
-                width: 17.4375rem;
+                //width: 17.4375rem;
                 text-align: center;
 
             }
@@ -61,20 +61,32 @@
             }
         }
 
-        .quality__img {
-            margin-top: -10rem;
+        .quality__img--container {
+            position: relative;
+            .quality__img {
+                margin-top: -10rem;
+                background-image: url('/src/assets/about/desktop/image-quality.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 27.8125rem;
+                height: 29.625rem;
 
-            @include bp-lg-tablet {
-                margin-top: -15rem;
+                @include bp-lg-tablet {
+                    margin-top: -15rem;
+                    background-image: url('/src/assets/about/tablet/image-quality.jpg');
+                    width: 35.8125rem;
+                    height: 20rem;
+                }
+
+                @include bp-sm-tablet {
+                    width: 100%;
+                    height: auto;
+                    margin-top: -5rem;
+
+                }
+
             }
-
-            @include bp-sm-tablet {
-                width: 100%;
-                height: auto;
-                margin-top: -5rem;
-
-            }
-
         }
 
     }

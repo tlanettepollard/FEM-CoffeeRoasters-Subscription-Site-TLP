@@ -122,3 +122,15 @@ We love receiving feedback! We're always looking to improve our challenges and o
 
 **Have fun building!** 🚀
 
+
+
+
+Code
+
+<picture className='quality__picture'>
+                            <source media='(min-width: 1200px)' srcSet={qualityItem.imgUrl.desktop} width='445' height='493' />
+                            <source media='(min-width: 768px)' srcSet={qualityItem.imgUrl.tablet} width='565' height='320' />
+                            <source media='(max-width: 767px)' srcSet={qualityItem.imgUrl.mobile} width='27.81rem' height='29.625rem' />
+                            <img className='quality__img' src={qualityItem.imgUrl.mobile}  alt={qualityItem.alt} />
+                        </picture>
+
