@@ -1,6 +1,41 @@
 @use '../abstracts/' as *;
 @use '../base/' as *;
 
-.location {
-    
-}
+    .location {
+        @include flex(column, flex-start, flex-start);
+        padding-top: 8rem !important;
+        margin: auto;
+        width: 65.3125rem !important;
+        height: 22.875rem;
+
+        &__main__title {
+            @include HeaderFourGrey;
+            padding-bottom: 5rem;
+
+        }
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            padding: 0 1.5rem;
+            width: 100%;
+            
+            .location__list {
+                @include flex(column, space-between, flex-start);
+
+                .location__img__container {
+                    padding-bottom: 1.25rem;
+                }
+
+                .location__details {
+                    width: 17.8125rem;
+
+                    .location__title {
+                        @include HeaderThreeDK;
+                        
+                    }
+                }
+            }
+
+        }
+    }
