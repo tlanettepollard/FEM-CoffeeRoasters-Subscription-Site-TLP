@@ -6,15 +6,22 @@
         @include flex(column, flex-start, flex-start);
         padding-top: 10rem;
         padding-bottom: 12.5rem;
-        max-width: 65rem;
-        margin: 0 3rem;
+        width: 65.3125rem;
+        margin: auto;
+
+        @include bp-lg-tablet {
+            width: 100%;
+            padding: 6.25rem 2.25rem;
+        }
 
         @include bp-md-tablet {
             margin: 0;
+            padding-top: 5rem;
+            padding-bottom: 7.5rem;
         }
 
-        @include bp-sm-tablet {
-            padding-bottom: 7.5rem;
+        @include bp-mobile {
+            padding-top: 5rem;
         }
 
         &__title {
@@ -28,11 +35,11 @@
             padding-bottom: 5rem;
 
             @include bp-lg-tablet {
-                width: 36.25rem;
+                width: 41.25rem;
             }
 
             @include bp-md-tablet {
-                width: 31.25rem;
+                width: 32.5rem;
                 height: auto;
                 padding-bottom: 3rem;
             }
@@ -137,8 +144,9 @@
 
             @include bp-md-tablet {
                 padding-top: 2.75rem;
-                
+
             }
+
             @include bp-sm-tablet {
                 align-items: center;
                 padding-top: 4.9375rem;
