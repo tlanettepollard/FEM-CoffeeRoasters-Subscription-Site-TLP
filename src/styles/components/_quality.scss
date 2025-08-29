@@ -4,7 +4,11 @@
 .quality {
     max-width: 80rem;
     position: relative;
-    margin-top: 20rem !important;
+    margin-top: 11.25rem !important;
+
+    @include bp-lg-tablet {
+        margin-top: 18.75rem !important;
+    }
 
     @include bp-sm-tablet {
         max-width: 40rem;
@@ -31,6 +35,10 @@
             padding: 0rem 1.5rem;
         }
 
+        @include bp-mobile {
+            padding: 0rem;
+        }
+
         .quality__details {
             width: 33.75rem;
             height: auto;
@@ -42,6 +50,12 @@
             @include bp-sm-tablet {
                 width: 17.4375rem;
             }
+            
+            @include bp-mobile {
+                padding: 0rem 1rem;
+            }
+            
+
 
             &__title {
                 @include HeaderThreeLT;
@@ -54,6 +68,11 @@
                 @include bp-sm-tablet {
                     font-size: 1.75rem;
                 }
+
+                @include bp-mobile {
+                    margin-top: 1rem;
+                    padding-bottom: 1rem;
+                }
             }
 
             &__summary {
@@ -65,6 +84,11 @@
 
                 @include bp-sm-tablet {
                     width: 17.4375rem;
+                }
+
+                @include bp-mobile {
+                    width: 100%;
+                    padding-bottom: 1rem;
                 }
             }
         }
