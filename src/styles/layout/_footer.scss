@@ -2,15 +2,23 @@
 @use '../base/' as *;
 
 footer {
-    max-height: 25rem;
-    margin: 1.25rem 0;
+    height: 7.5rem;
+    margin: 5.5rem 5rem;
+
+
 
     @include bp-lg-tablet {
         height: 18.75rem;
+        margin: 4.5rem 2.5rem;
     }
 
     @include bp-sm-tablet {
-        height: 21.875rem;
+        height: 16.875rem;
+    }
+
+    @include bp-mobile {
+        height: 21.625rem;
+        margin: 4.5rem 1.5rem;
     }
 
     .footer__container {
