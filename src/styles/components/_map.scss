@@ -1,6 +1,9 @@
 @use '../abstracts/' as *;
 @use '../base/' as *;
 
-.location {
-    
-}
+    .location {
+        @include flex(column, flex-start, flex-start);
+        margin-top: 10rem !important;
+        
+
+    }
