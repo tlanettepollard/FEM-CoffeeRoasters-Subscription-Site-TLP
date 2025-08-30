@@ -2,15 +2,17 @@
 @use '../base/' as *;
 
 .location {
-    @include flex(column, flex-start, flex-start);
+    //@include flex(column, flex-start, flex-start);
     padding-top: 8rem !important;
     margin: auto;
     width: 90%;
+    height: auto;
+    //padding-bottom: 6.25rem;
 
 
     &__main__title {
         @include HeaderFourGrey;
-        padding-bottom: 5rem;
+        padding-bottom: 4.5rem;
 
     }
 
@@ -20,10 +22,26 @@
         grid-template-rows: 1fr;
         padding: 0 1.5rem;
         width: 100%;
+        height: auto;
+        gap: 2rem;
 
         @include bp-sm-tablet {
             grid-template-rows: repeat(3, 1fr);
             grid-template-columns: none;
+        }
+
+        .location__list {
+            @include flex(column, space-between, flex-start);
+            height: 100%;
+
+            .location__img {
+
+            }
+
+            .location__title {
+                @include HeaderFourDK;
+                padding-bottom: 2.25rem;
+            }
         }
 
     }

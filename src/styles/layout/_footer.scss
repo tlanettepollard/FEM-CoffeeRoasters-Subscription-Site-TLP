@@ -13,7 +13,7 @@ footer {
     }
 
     @include bp-sm-tablet {
-        height: 16.875rem;
+        height: 25rem;
     }
 
     @include bp-mobile {
@@ -38,6 +38,10 @@ footer {
                 width: 100%;
                 flex-direction: column;
                 padding-top: 3.375rem;
+            }
+
+            @include bp-sm-tablet {
+                height: 50%;
             }
 
 
