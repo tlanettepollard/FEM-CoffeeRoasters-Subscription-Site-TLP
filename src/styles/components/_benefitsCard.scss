@@ -5,7 +5,7 @@
     .benefits {
         width: 90%;
         position: relative;
-        
+
 
         &__content {
             height: 36rem;
@@ -51,7 +51,7 @@
         .benefits__cards {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
+            column-gap: .125rem;
             justify-items: center;
             margin-top: -14rem;
 
@@ -149,5 +149,29 @@
 
             }
         }
+    }
+}
+
+.benefit__card:first-child {
+    margin-right: -6.25rem;
+
+    @include bp-laptop {
+        margin-right: -1.5625rem;
+    }
+
+    @include bp-lg-tablet {
+        margin-right: 0rem;
+    }
+}
+
+.benefit__card:last-child {
+    margin-left: -6.25rem;
+
+    @include bp-laptop {
+        margin-left: -1.5625rem;
+    }
+
+    @include bp-lg-tablet {
+        margin-left: 0rem;
     }
 }
