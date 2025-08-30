@@ -31,7 +31,7 @@ footer {
         }
 
         .footer__mainmenu {
-            width: 50%;
+            width: 60%;
             @include flex(row, space-between, center);
 
             @include bp-lg-tablet {
@@ -42,8 +42,7 @@ footer {
 
 
             .footer__logo {
-                width: 14.75rem;
-                height: 1.625rem;
+                width: 100%;
                 height: auto;
 
             }
