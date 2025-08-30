@@ -8,6 +8,7 @@
         padding-bottom: 12.5rem;
         width: 90%;
         margin: auto;
+        margin-top: 12.5rem;
         padding: 0 10.3125rem;
 
         @include bp-lg-tablet {
@@ -31,12 +32,16 @@
         }
 
         .divider {
-            width: 49.375rem;
+            width: 46.875rem;
             height: auto;
             padding-bottom: 5rem;
 
+            @include bp-laptop {
+                width: 40.625rem;
+            }
+
             @include bp-lg-tablet {
-                width: 41.25rem;
+                width: 42.5rem;
             }
 
             @include bp-md-tablet {
