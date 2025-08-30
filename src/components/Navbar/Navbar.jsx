@@ -32,7 +32,7 @@ export function Navbar() {
     return (
         <>
             {isNotMobile ? (
-                <nav aria-label='site' className='expanded-nav container'>
+                <nav aria-label='site' className='expanded-nav'>
                     <div className='logo__wrapper'>
                         <Link to='/' className='logo--link'>
                             <img src={Logo} alt="welcome to coffeeroasters" />

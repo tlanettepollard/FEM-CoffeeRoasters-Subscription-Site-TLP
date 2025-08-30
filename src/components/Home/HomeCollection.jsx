@@ -2,7 +2,7 @@ import { Collections } from "../planData";
 
 export function HomeCollection() {
     return (
-        <section className='collection container'>
+        <section className='collection'>
             <h2 className='collection__title'> Our collection</h2>
             <div className="collection__list">
                 {Collections.map(item => {

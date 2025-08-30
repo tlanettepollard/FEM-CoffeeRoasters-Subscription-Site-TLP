@@ -6,7 +6,7 @@
         text-align: center;
         @include flex(column, center, center);
         margin: auto;
-
+        width: 90%;
 
         &__title {
             font-size: 9.375rem;
