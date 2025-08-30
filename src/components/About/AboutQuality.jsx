@@ -4,7 +4,7 @@ import { Quality } from "../planData";
 
 export function AboutQuality() {
     return (
-        <section className='quality container'>
+        <section className='quality'>
             {Quality.map(qualityItem => {
                 return <div key={qualityItem.id} className='quality__content'>
                     <div className='quality__details'>

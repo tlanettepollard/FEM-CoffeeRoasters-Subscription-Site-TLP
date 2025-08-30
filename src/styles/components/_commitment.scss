@@ -2,7 +2,9 @@
 @use '../base/' as *;
 
 .commit {
+    width: 90%;
     margin-top: 10.5rem !important;
+    margin: auto;
 
     @include bp-lg-tablet {
         margin-top: 12.5rem !important;
