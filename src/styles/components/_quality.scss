@@ -2,9 +2,10 @@
 @use '../base/' as *;
 
 .quality {
-    max-width: 80rem;
+    width: 90%;
     position: relative;
     margin-top: 11.25rem !important;
+    margin: auto;
 
     @include bp-lg-tablet {
         margin-top: 18.75rem !important;

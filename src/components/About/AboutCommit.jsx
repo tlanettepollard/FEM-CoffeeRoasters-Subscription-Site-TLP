@@ -2,7 +2,7 @@ import { Commitment } from "../planData";
 
 export function AboutCommitment() {
     return (
-        <section className='commit container'>
+        <section className='commit'>
             {Commitment.map(commitItem => {
                 return <div key={commitItem.id} className='commit__item'>
                     <>
