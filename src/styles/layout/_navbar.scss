@@ -13,6 +13,9 @@ nav ul li a:not(.active):hover {
 
 .expanded-nav {
     @include flex(row, space-between, center);
+    width: 90%;
+    margin: auto;
+
 
 
     ul {
@@ -34,6 +37,9 @@ nav ul li a:not(.active):hover {
 
 .mobile-nav {
     @include flex(row, space-between, center);
+    width: 90% !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
 }
 

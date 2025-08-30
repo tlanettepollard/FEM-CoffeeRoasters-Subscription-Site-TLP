@@ -13,6 +13,7 @@
 // Global Styles
 
 body {
+    width: 100vw;
     background-color: $page-background;
     font-family: $body-font;
 }
@@ -28,8 +29,8 @@ a {
 }
 
 .container {
+    max-width: 90rem;
     width: 100%;
-    height: 100%;
-    margin: auto;
-    padding: .625rem;
+    margin-right: auto;
+    margin-left: auto;
 }

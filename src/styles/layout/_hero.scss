@@ -3,6 +3,11 @@
 
 .hero {
     @include flex(row, flex-start, center);
+    width: 90%;
+    height: 53.375rem;
+    margin: auto;
+
+    
 
     &__content {
         width: 30.8125rem;
