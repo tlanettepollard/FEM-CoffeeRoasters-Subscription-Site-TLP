@@ -7,7 +7,7 @@ export function HomeBenefits() {
                 <h2 className='benefits__title'>Why choose us?</h2>
                 <p className='benefits__summary'>A large part of our role is choosing which particular coffees will be featured in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.</p>
             </div>
-            <ul className='benefits__cards container'>
+            <ul className='benefits__cards'>
                 {BenefitCards.map(card => {
                     return <li className='benefit__card' key={card.id}>
                         <div className='card__container'>

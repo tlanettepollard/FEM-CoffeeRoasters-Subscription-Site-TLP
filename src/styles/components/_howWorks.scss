@@ -6,8 +6,9 @@
         @include flex(column, flex-start, flex-start);
         padding-top: 10rem;
         padding-bottom: 12.5rem;
-        width: 65.3125rem;
+        width: 90%;
         margin: auto;
+        padding: 0 10.3125rem;
 
         @include bp-lg-tablet {
             width: 100%;
