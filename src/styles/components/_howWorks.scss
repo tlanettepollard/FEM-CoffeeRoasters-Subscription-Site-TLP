@@ -163,17 +163,21 @@
 }
 
 .main__subscribe {
-    .work__container {
-        .work {
-            background-color: $dk-grey-blue;
-           
-          
+    .work {
+        background-color: $dk-grey-blue;
 
+        .divider {
+            padding-top: 7.0625rem;
+        }
+
+        .work__container {
             .works__items {
-
-                .work__item {}
+                .work__item {
+                    &--title {
+                        color: $lt-cream;
+                    }
+                }
             }
         }
     }
-
 }

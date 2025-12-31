@@ -16,11 +16,8 @@ export function Subscribe() {
                 <div className="work__container">
                     <WorksItems />
                 </div>
-
             </section>
             <Plans />
-
-
         </main>
     );
 }
