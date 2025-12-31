@@ -1,0 +1,52 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.plan__container {
+    padding: 0 10.3125rem;
+
+    .plan__section {
+        @include flex (row, space-between, start);
+
+        aside {
+            display: block;
+            flex: 1 1 25%;
+
+            .nav__list {
+                position: relative;
+                margin-top: 2.5rem;
+                @include flex(column, space-between, baseline);
+                min-height: 22.25rem;
+
+                .nav__item {
+                    position: relative;
+                    font-size: $h4-heading-size;
+                    font-weight: 900;
+                    
+
+                    a {
+                        text-decoration: none;
+                        outline: none;
+                        font-family: $header-font;
+                        color: $grey;
+                       
+
+                        &:hover>.nav__item__number,
+                        &:focus>.nav__item__number {
+                            color: $dk-cyan;
+                        }
+
+                        &:hover>.nav__item__text,
+                        &:focus>.nav__item__text {
+                            color: $dk-grey-blue;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .accordion__container {
+            flex: 1 1 75%;
+        }
+    }
+}
