@@ -1,7 +1,7 @@
 import React from "react";
 import SharedHero from "../components/Shared/SharedHero";
 import { WorksItems } from "../components/Shared/WorksItems";
-import dividerImg from '../assets/home/desktop/Divider.png';
+import dividerImg from '../assets/plan/desktop/dividerline.png';
 import { Plans } from "../components/Subscribe/Plans";
 
 
@@ -16,11 +16,8 @@ export function Subscribe() {
                 <div className="work__container">
                     <WorksItems />
                 </div>
-
             </section>
             <Plans />
-
-
         </main>
     );
 }
