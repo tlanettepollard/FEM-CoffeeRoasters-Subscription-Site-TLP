@@ -3,6 +3,7 @@
 
 .plan__container {
     padding: 0 10.3125rem;
+    margin-top: 6.25rem;
 
     .plan__section {
         @include flex (row, space-between, start);
@@ -13,22 +14,31 @@
 
             .nav__list {
                 position: relative;
-                margin-top: 2.5rem;
-                @include flex(column, space-between, baseline);
+
+                @include flex(column, space-between, start);
                 min-height: 22.25rem;
+
 
                 .nav__item {
                     position: relative;
                     font-size: $h4-heading-size;
                     font-weight: 900;
-                    
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        width: 12rem;
+                        height: 0.1rem;
+                        background-color: $lt-grey;
+                        bottom: -1rem;
+                        left: 0;
+                    }
 
                     a {
-                        text-decoration: none;
                         outline: none;
                         font-family: $header-font;
                         color: $grey;
-                       
+
 
                         &:hover>.nav__item__number,
                         &:focus>.nav__item__number {
@@ -39,6 +49,11 @@
                         &:focus>.nav__item__text {
                             color: $dk-grey-blue;
                         }
+
+                        .nav__item__number {
+                            color: $grey;
+                            padding-right: 1rem;
+                        }
                     }
                 }
 
@@ -47,6 +62,25 @@
 
         .accordion__container {
             flex: 1 1 75%;
+
+            .accordion {
+                .accordion__list__item {
+                    .accordion__item {
+                        .accordion__header {
+                            .accordion--btn {
+                                position: relative;
+                                @include flex (row, space-between, baseline);
+                                width: 100%;
+                                background-color: inherit;
+                                @include HeaderTwoGR;
+                                border: none;
+                                text-align: left;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
