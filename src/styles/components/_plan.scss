@@ -62,6 +62,25 @@
 
         .accordion__container {
             flex: 1 1 75%;
+
+            .accordion {
+                .accordion__list__item {
+                    .accordion__item {
+                        .accordion__header {
+                            .accordion--btn {
+                                position: relative;
+                                @include flex (row, space-between, baseline);
+                                width: 100%;
+                                background-color: inherit;
+                                @include HeaderTwoGR;
+                                border: none;
+                                text-align: left;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -116,6 +116,16 @@
     line-height: 3rem;
 }
 
+@mixin HeaderTwoGR() {
+    font-family: $header-font;
+    font-size: $h2-heading-size;
+    color: $accordion-title-default;
+    font-size: $h2-heading-size;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 3rem;
+}
+
 @mixin HeaderThreeDK() {
     font-family: $header-font;
     color: $dk-heading-color;
