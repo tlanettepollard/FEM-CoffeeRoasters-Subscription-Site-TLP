@@ -11,6 +11,7 @@
         aside {
             display: block;
             flex: 1 1 25%;
+
             @include bp-lg-tablet {
                 display: none;
             }
@@ -65,7 +66,7 @@
 
         .accordion__container {
             flex: 1 1 75%;
-            
+
 
             .accordion {
                 .accordion__list__item {
@@ -80,6 +81,22 @@
                                 border: none;
                                 text-align: left;
                                 cursor: pointer;
+
+                                &::after {
+                                    content: "";
+                                    background-image: url('src/assets/plan/desktop/icon-arrow.svg');
+                                    width: 1.25rem;
+                                    height: 1.25rem;
+                                    background-repeat: no-repeat;
+                                    flex-shrink: 0;
+                                    transition: transform .2s ease-in-out;
+                                }
+
+                                &:not(.collapsed)::after {
+                                    background-image: url('src/assets/plan/desktop/icon-arrow.svg');
+                                    transform: rotate(-180deg);
+
+                                }
                             }
                         }
                     }
