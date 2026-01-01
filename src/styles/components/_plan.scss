@@ -11,6 +11,9 @@
         aside {
             display: block;
             flex: 1 1 25%;
+            @include bp-lg-tablet {
+                display: none;
+            }
 
             .nav__list {
                 position: relative;
@@ -62,6 +65,7 @@
 
         .accordion__container {
             flex: 1 1 75%;
+            
 
             .accordion {
                 .accordion__list__item {
