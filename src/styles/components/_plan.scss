@@ -77,10 +77,14 @@
                                 @include flex (row, space-between, baseline);
                                 width: 100%;
                                 background-color: inherit;
-                                @include HeaderTwoGR;
+                                @include HeaderThreeGR;
                                 border: none;
                                 text-align: left;
                                 cursor: pointer;
+
+                                @include bp-mobile {
+                                    font-size: $h4-heading-size;
+                                }
 
                                 &::after {
                                     content: "";
