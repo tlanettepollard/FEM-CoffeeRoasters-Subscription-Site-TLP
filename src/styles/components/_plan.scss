@@ -3,11 +3,14 @@
 
 .plan__container {
     padding: 0 10.3125rem;
-    margin-top: 6.25rem;
+    @include bp-lg-tablet {
+        padding: 0;
+    }
 
     .plan__section {
         @include flex (row, space-between, start);
-
+        margin-top: 7.5rem;
+        
         aside {
             display: block;
             flex: 1 1 25%;
@@ -18,15 +21,16 @@
 
             .nav__list {
                 position: relative;
-
-                @include flex(column, space-between, start);
+                @include flex(column, space-between, baseline);
                 min-height: 22.25rem;
+                margin-top: 1rem;
 
 
                 .nav__item {
                     position: relative;
                     font-size: $h4-heading-size;
                     font-weight: 900;
+                    line-height: 2rem;
 
                     &:before {
                         position: absolute;
@@ -36,12 +40,14 @@
                         background-color: $lt-grey;
                         bottom: -1rem;
                         left: 0;
+                        
                     }
 
                     a {
                         outline: none;
                         font-family: $header-font;
                         color: $grey;
+                        //line-height: 2rem;
 
 
                         &:hover>.nav__item__number,
@@ -66,9 +72,10 @@
 
         .accordion__container {
             flex: 1 1 75%;
-
+            padding: 0 2.5rem;
 
             .accordion {
+
                 .accordion__list__item {
                     .accordion__item {
                         .accordion__header {
