@@ -83,6 +83,7 @@
 
                 .accordion__list__item {
                     .accordion__item {
+                        margin-bottom: 5.5rem;
                         .accordion__header {
                             .accordion--btn {
                                 position: relative;
@@ -125,32 +126,37 @@
     }
 }
 
+// Accordion Cards
 .plan__card {
-    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-}
-
-.plan__select {
-    position: relative;
-    margin: 1.2rem auto;
-
-    input[type="radio"] {
-        position: absolute;
-        height: 0;
-        width: 0;
-        opacity: 0;
-    }
-
-    input[type="radio"]:checked+label {
-        background-color: $dk-cyan;
-        color: $lt-cream;
-    }
-
-    input[type="radio"]:focus+label {
-        border: 2px dashed #444;
+    @include bp-lg-mobile {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
     }
 }
 
+.radio__label {
+    background-color: $cream;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+
+    @include bp-xl-tablet {
+        
+    }
+}
+
+
+
+
+
+
+// Accordion Collapse 
 
 .collapse01,
 .collapse02,
@@ -169,19 +175,4 @@
 .grind__disable {
     pointer-events: none;
     color: #e1d4d4;
-}
-
-.radio__label {
-    background-color: $cream;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1.5rem;
-    border-radius: .5rem;
-    min-height: 100%;
-
-    &:hover,
-    &:focus {
-        background-color: $selection-btn-hover;
-        color: $dk-grey-blue;
-    }
 }
