@@ -3,6 +3,7 @@
 
 .plan__container {
     padding: 0 10.3125rem;
+
     @include bp-lg-tablet {
         padding: 0;
     }
@@ -10,7 +11,11 @@
     .plan__section {
         @include flex (row, space-between, start);
         margin-top: 7.5rem;
-        
+
+        @include bp-lg-mobile {
+            margin-top: 3rem;
+        }
+
         aside {
             display: block;
             flex: 1 1 25%;
@@ -40,7 +45,7 @@
                         background-color: $lt-grey;
                         bottom: -1rem;
                         left: 0;
-                        
+
                     }
 
                     a {
@@ -110,9 +115,73 @@
                                 }
                             }
                         }
+
+
+
                     }
                 }
             }
         }
+    }
+}
+
+.plan__card {
+    margin: auto;
+
+}
+
+.plan__select {
+    position: relative;
+    margin: 1.2rem auto;
+
+    input[type="radio"] {
+        position: absolute;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+
+    input[type="radio"]:checked+label {
+        background-color: $dk-cyan;
+        color: $lt-cream;
+    }
+
+    input[type="radio"]:focus+label {
+        border: 2px dashed #444;
+    }
+}
+
+
+.collapse01,
+.collapse02,
+.collapse03,
+.collapse04,
+.collapse05 {
+    display: none;
+}
+
+.collapse__show {}
+
+.hide__grind {
+    display: none;
+}
+
+.grind__disable {
+    pointer-events: none;
+    color: #e1d4d4;
+}
+
+.radio__label {
+    background-color: $cream;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    min-height: 100%;
+
+    &:hover,
+    &:focus {
+        background-color: $selection-btn-hover;
+        color: $dk-grey-blue;
     }
 }
