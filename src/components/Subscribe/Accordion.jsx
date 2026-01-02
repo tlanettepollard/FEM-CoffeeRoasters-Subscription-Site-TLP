@@ -163,6 +163,7 @@ const Accordion = () => {
             <OrderSummary onSubmit={handleSubmit} drink={preferDrink} bean={beanChoice} quantity={qty} grind={grind} frequency={delivery} />
             <Modal onSubmit={handleSubscribe} drink={radioData.preference} bean={radioData.bean} quantity={radioData.quantity} grind={radioData.grind} frequency={radioData.deliveries} shipping={shippingCost()} verb={verb} />
 
+            <div className='overlay hide__overlay'></div>
         </div>
     )
 

@@ -3,7 +3,7 @@ import { ChoicesNav } from "../planData";
 
 const AsideNav = () => {
     return (
-        <aside aria-label='aside navigation' className='choice__container'>
+        <aside aria-label='aside navigation' className='aside__nav'>
             <nav>
                 <ul className='nav__list'>
                     {ChoicesNav.map((choice) => {

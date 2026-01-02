@@ -3,29 +3,39 @@
 
 .plan__container {
     padding: 0 10.3125rem;
-    margin-top: 6.25rem;
+
+    @include bp-lg-tablet {
+        padding: 0;
+    }
 
     .plan__section {
         @include flex (row, space-between, start);
+        margin-top: 7.5rem;
+
+        @include bp-lg-mobile {
+            margin-top: 3rem;
+        }
 
         aside {
             display: block;
             flex: 1 1 25%;
+
             @include bp-lg-tablet {
                 display: none;
             }
 
             .nav__list {
                 position: relative;
-
-                @include flex(column, space-between, start);
+                @include flex(column, space-between, baseline);
                 min-height: 22.25rem;
+                margin-top: 1rem;
 
 
                 .nav__item {
                     position: relative;
                     font-size: $h4-heading-size;
                     font-weight: 900;
+                    line-height: 2rem;
 
                     &:before {
                         position: absolute;
@@ -35,12 +45,14 @@
                         background-color: $lt-grey;
                         bottom: -1rem;
                         left: 0;
+
                     }
 
                     a {
                         outline: none;
                         font-family: $header-font;
                         color: $grey;
+                        //line-height: 2rem;
 
 
                         &:hover>.nav__item__number,
@@ -65,26 +77,102 @@
 
         .accordion__container {
             flex: 1 1 75%;
-            
+            padding: 0 2.5rem;
 
             .accordion {
+
                 .accordion__list__item {
                     .accordion__item {
+                        margin-bottom: 5.5rem;
                         .accordion__header {
                             .accordion--btn {
                                 position: relative;
                                 @include flex (row, space-between, baseline);
                                 width: 100%;
                                 background-color: inherit;
-                                @include HeaderTwoGR;
+                                @include HeaderThreeGR;
                                 border: none;
                                 text-align: left;
                                 cursor: pointer;
+
+                                @include bp-mobile {
+                                    font-size: $h4-heading-size;
+                                }
+
+                                &::after {
+                                    content: "";
+                                    background-image: url('src/assets/plan/desktop/icon-arrow.svg');
+                                    width: 1.25rem;
+                                    height: 1.25rem;
+                                    background-repeat: no-repeat;
+                                    flex-shrink: 0;
+                                    transition: transform .2s ease-in-out;
+                                }
+
+                                &:not(.collapsed)::after {
+                                    background-image: url('src/assets/plan/desktop/icon-arrow.svg');
+                                    transform: rotate(-180deg);
+
+                                }
                             }
                         }
+
+
+
                     }
                 }
             }
         }
     }
+}
+
+// Accordion Cards
+.plan__card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include bp-lg-mobile {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}
+
+.radio__label {
+    background-color: $cream;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+
+    @include bp-xl-tablet {
+        
+    }
+}
+
+
+
+
+
+
+// Accordion Collapse 
+
+.collapse01,
+.collapse02,
+.collapse03,
+.collapse04,
+.collapse05 {
+    display: none;
+}
+
+.collapse__show {}
+
+.hide__grind {
+    display: none;
+}
+
+.grind__disable {
+    pointer-events: none;
+    color: #e1d4d4;
 }
