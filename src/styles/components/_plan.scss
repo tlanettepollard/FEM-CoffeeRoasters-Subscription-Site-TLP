@@ -76,14 +76,19 @@
         }
 
         .accordion__container {
+            position: relative;
             flex: 1 1 75%;
             padding: 0 2.5rem;
 
             .accordion {
 
                 .accordion__list__item {
+                    margin-bottom: 3.125rem;
+
                     .accordion__item {
                         margin-bottom: 5.5rem;
+                        padding: 1rem 0;
+
                         .accordion__header {
                             .accordion--btn {
                                 position: relative;
@@ -94,6 +99,9 @@
                                 border: none;
                                 text-align: left;
                                 cursor: pointer;
+                                transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out,
+                                    box-shadow .15s ease-in-out,
+                                    border-radius .15s ease;
 
                                 @include bp-mobile {
                                     font-size: $h4-heading-size;
@@ -135,7 +143,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    
+
 
     @include bp-lg-mobile {
         grid-template-columns: repeat(1, 1fr);
@@ -146,6 +154,7 @@
     .plan__select {
         position: relative;
         height: 15.625rem;
+
         @include bp-lg-mobile {
             height: 8.75rem;
         }
@@ -161,6 +170,10 @@
             background-color: $selection-btn-active;
             color: $lt-heading-color;
         }
+
+        input[type='radio']:focus+label {
+            border: 2px dashed #444;
+        }
     }
 }
 
@@ -171,12 +184,11 @@
     padding: 1rem 1.5rem;
     height: 15.625rem;
 
-    @include bp-xl-tablet {
-        
+    @include bp-xl-tablet {}
+
+    @include bp-lg-mobile {
+        height: 8.75rem;
     }
-        @include bp-lg-mobile {
-            height: 8.75rem;
-        }
 }
 
 
