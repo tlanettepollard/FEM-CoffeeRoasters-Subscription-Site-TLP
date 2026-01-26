@@ -16,64 +16,7 @@
             margin-top: 3rem;
         }
 
-        aside {
-            display: block;
-            flex: 1 1 25%;
-
-            @include bp-lg-tablet {
-                display: none;
-            }
-
-            .nav__list {
-                position: relative;
-                @include flex(column, space-between, baseline);
-                min-height: 22.25rem;
-                margin-top: 1rem;
-
-
-                .nav__item {
-                    position: relative;
-                    font-size: $h4-heading-size;
-                    font-weight: 900;
-                    line-height: 2rem;
-
-                    &:before {
-                        position: absolute;
-                        content: "";
-                        width: 12rem;
-                        height: 0.1rem;
-                        background-color: $lt-grey;
-                        bottom: -1rem;
-                        left: 0;
-
-                    }
-
-                    a {
-                        outline: none;
-                        font-family: $header-font;
-                        color: $grey;
-                        //line-height: 2rem;
-
-
-                        &:hover>.nav__item__number,
-                        &:focus>.nav__item__number {
-                            color: $dk-cyan;
-                        }
-
-                        &:hover>.nav__item__text,
-                        &:focus>.nav__item__text {
-                            color: $dk-grey-blue;
-                        }
-
-                        .nav__item__number {
-                            color: $grey;
-                            padding-right: 1rem;
-                        }
-                    }
-                }
-
-            }
-        }
+        
 
         .accordion__container {
             position: relative;
