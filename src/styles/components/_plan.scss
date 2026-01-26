@@ -128,6 +128,7 @@
 
 // Accordion Cards
 .plan__card {
+
     margin-top: 2rem;
     margin-bottom: 2rem;
     gap: 1rem;
@@ -143,9 +144,22 @@
     }
 
     .plan__select {
+        position: relative;
         height: 15.625rem;
         @include bp-lg-mobile {
             height: 8.75rem;
+        }
+
+        input[type='radio'] {
+            position: absolute;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
+
+        input[type='radio']:checked+label {
+            background-color: $selection-btn-active;
+            color: $lt-heading-color;
         }
     }
 }
